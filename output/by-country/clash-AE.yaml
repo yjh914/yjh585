@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 PH 01 - yjh
+- name: 🇦🇪 阿联酋 (UAE) 01 - yjh
   type: vless
-  server: 149.104.109.17
-  port: 2087
-  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /04461917b179
+    path: /
     headers:
-      Host: 149.104.109.17
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 PH 01 - yjh
+  - 🇦🇪 阿联酋 (UAE) 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 PH 01 - yjh
+  - 🇦🇪 阿联酋 (UAE) 01 - yjh
 rules:
 - MATCH,PROXIES
