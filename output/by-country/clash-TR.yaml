@@ -22,14 +22,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 03 - yjh
-  type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - yjh
   - 🇹🇷 土耳其 (Turkey) 02 - yjh
-  - 🇹🇷 土耳其 (Turkey) 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - yjh
   - 🇹🇷 土耳其 (Turkey) 02 - yjh
-  - 🇹🇷 土耳其 (Turkey) 03 - yjh
 rules:
 - MATCH,PROXIES

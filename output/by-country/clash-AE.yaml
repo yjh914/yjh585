@@ -30,33 +30,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - yjh
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 04 - yjh
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - yjh
   - 🇦🇪 阿联酋 (UAE) 02 - yjh
-  - 🇦🇪 阿联酋 (UAE) 03 - yjh
-  - 🇦🇪 阿联酋 (UAE) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - yjh
   - 🇦🇪 阿联酋 (UAE) 02 - yjh
-  - 🇦🇪 阿联酋 (UAE) 03 - yjh
-  - 🇦🇪 阿联酋 (UAE) 04 - yjh
 rules:
 - MATCH,PROXIES
