@@ -6,24 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 06 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - yjh",
+        "🇦🇪 阿联酋 (UAE) 02 - yjh",
+        "🇦🇪 阿联酋 (UAE) 03 - yjh",
+        "🇦🇪 阿联酋 (UAE) 04 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 06 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - yjh",
+        "🇦🇪 阿联酋 (UAE) 02 - yjh",
+        "🇦🇪 阿联酋 (UAE) 03 - yjh",
+        "🇦🇪 阿联酋 (UAE) 04 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },

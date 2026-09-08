@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - yjh
+- name: 🇺🇿 UZ 01 - yjh
   type: vless
-  server: 38.60.168.98
+  server: 189.74.97.47
   port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /db55c40bbc75
+    path: /755276b33b6f
     headers:
-      Host: 38.60.168.98
+      Host: 189.74.97.47
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - yjh
+  - 🇺🇿 UZ 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - yjh
+  - 🇺🇿 UZ 01 - yjh
 rules:
 - MATCH,PROXIES

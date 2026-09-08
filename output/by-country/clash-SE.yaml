@@ -4,7 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - xiaohe
+- name: 🇸🇪 SE 01 - yjh
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 02 - yjh
   type: vless
   server: 202.155.11.249
   port: 443
@@ -23,12 +30,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 01 - yjh
+  - 🇸🇪 SE 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 01 - yjh
+  - 🇸🇪 SE 02 - yjh
 rules:
 - MATCH,PROXIES
