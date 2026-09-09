@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - yjh",
-        "🇪🇸 西班牙 (Spain) 02 - yjh",
-        "🇪🇸 西班牙 (Spain) 03 - yjh"
+        "🇲🇽 MX 01 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - yjh",
-        "🇪🇸 西班牙 (Spain) 02 - yjh",
-        "🇪🇸 西班牙 (Spain) 03 - yjh"
+        "🇲🇽 MX 01 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },

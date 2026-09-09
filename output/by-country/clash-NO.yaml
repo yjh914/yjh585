@@ -29,18 +29,6 @@ proxies:
   servername: bowandbead.com
   client-fingerprint: qq
 - name: 🇳🇴 NO 03 - yjh
-  type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇳🇴 NO 04 - yjh
   type: ss
   server: 185.213.23.63
   port: 990
@@ -55,7 +43,6 @@ proxy-groups:
   - 🇳🇴 NO 01 - yjh
   - 🇳🇴 NO 02 - yjh
   - 🇳🇴 NO 03 - yjh
-  - 🇳🇴 NO 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +51,5 @@ proxy-groups:
   - 🇳🇴 NO 01 - yjh
   - 🇳🇴 NO 02 - yjh
   - 🇳🇴 NO 03 - yjh
-  - 🇳🇴 NO 04 - yjh
 rules:
 - MATCH,PROXIES
