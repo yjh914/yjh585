@@ -20,7 +20,7 @@ proxies:
       Host: 45.9.15.206
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: vless
-  server: 45.9.15.206
+  server: ru05.abvpn.ru
   port: 443
   uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
@@ -34,19 +34,31 @@ proxies:
       Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
   type: vless
-  server: 46.8.200.91
+  server: 45.9.15.206
   port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: ru05.abvpn.ru
   network: ws
   ws-opts:
-    path: /casc
+    path: /websocket
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
   type: ss
   server: 130.49.189.158
   port: 43558
@@ -62,6 +74,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
   - 🇷🇺 俄罗斯 (Russia) 03 - yjh
   - 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +84,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
   - 🇷🇺 俄罗斯 (Russia) 03 - yjh
   - 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 05 - yjh
 rules:
 - MATCH,PROXIES
