@@ -6,12 +6,33 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - yjh
   type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 02 - yjh
+  type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - yjh
+- name: 🇪🇸 西班牙 (Spain) 03 - yjh
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 04 - yjh
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 05 - yjh
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -22,14 +43,7 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03 - yjh
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +52,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - yjh
   - 🇪🇸 西班牙 (Spain) 02 - yjh
   - 🇪🇸 西班牙 (Spain) 03 - yjh
+  - 🇪🇸 西班牙 (Spain) 04 - yjh
+  - 🇪🇸 西班牙 (Spain) 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +62,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - yjh
   - 🇪🇸 西班牙 (Spain) 02 - yjh
   - 🇪🇸 西班牙 (Spain) 03 - yjh
+  - 🇪🇸 西班牙 (Spain) 04 - yjh
+  - 🇪🇸 西班牙 (Spain) 05 - yjh
 rules:
 - MATCH,PROXIES
