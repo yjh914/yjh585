@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - yjh"
+        "🇰🇿 KZ 01 - yjh",
+        "🇰🇿 KZ 02 - yjh",
+        "🇰🇿 KZ 03 - yjh",
+        "🇰🇿 KZ 04 - yjh",
+        "🇰🇿 KZ 05 - yjh",
+        "🇰🇿 KZ 06 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - yjh"
+        "🇰🇿 KZ 01 - yjh",
+        "🇰🇿 KZ 02 - yjh",
+        "🇰🇿 KZ 03 - yjh",
+        "🇰🇿 KZ 04 - yjh",
+        "🇰🇿 KZ 05 - yjh",
+        "🇰🇿 KZ 06 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },

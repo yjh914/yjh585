@@ -6,20 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - yjh",
-        "🇳🇴 NO 02 - yjh",
-        "🇳🇴 NO 03 - yjh",
-        "🇳🇴 NO 04 - yjh"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - yjh",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - yjh",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - yjh",
-        "🇳🇴 NO 02 - yjh",
-        "🇳🇴 NO 03 - yjh",
-        "🇳🇴 NO 04 - yjh"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - yjh",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - yjh",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
