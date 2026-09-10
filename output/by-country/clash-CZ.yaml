@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 MX 01 - yjh
+- name: 🇨🇿 CZ 01 - yjh
   type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ul-mexico1.09vpn.com
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 MX 01 - yjh
+  - 🇨🇿 CZ 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 MX 01 - yjh
+  - 🇨🇿 CZ 01 - yjh
 rules:
 - MATCH,PROXIES
