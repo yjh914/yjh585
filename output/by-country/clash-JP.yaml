@@ -5,18 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - yjh
+  type: vmess
+  server: 155.248.176.44
+  port: 55216
+  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - yjh
   type: vless
-  server: freshjuniper.download
+  server: 172.67.217.240
   port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: freshjuniper.download
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 02 - yjh
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 03 - yjh
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 04 - yjh
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -26,174 +45,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - yjh
-  type: vmess
-  server: 155.248.176.44
-  port: 55216
-  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - yjh
-  type: vless
-  server: freshjuniper.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: freshjuniper.download
-  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 05 - yjh
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - yjh
-  type: vless
-  server: 130.12.102.62
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - yjh
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - yjh
-  type: vless
-  server: freshjuniper.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: freshjuniper.download
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 09 - yjh
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - yjh
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - yjh
-  type: vmess
-  server: 155.248.176.44
-  port: 55216
-  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - yjh
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - yjh
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 14 - yjh
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - yjh
-  type: vless
-  server: 130.12.102.125
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 16 - yjh
-  type: vless
-  server: 130.12.102.26
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 17 - yjh
-  type: vless
-  server: 130.12.102.143
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 18 - yjh
   type: vless
   server: 172.67.156.147
   port: 443
@@ -207,282 +69,28 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - yjh
+- name: 🇯🇵 日本 (Japan) 07 - yjh
   type: ss
   server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 20 - yjh
+- name: 🇯🇵 日本 (Japan) 08 - yjh
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 09 - yjh
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 21 - yjh
-  type: vless
-  server: 130.12.102.125
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 22 - yjh
-  type: vless
-  server: 38.175.203.11
-  port: 443
-  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: oulucloud.706666.xyz
-- name: 🇯🇵 日本 (Japan) 23 - yjh
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 24 - yjh
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - yjh
-  type: vless
-  server: 38.175.203.11
-  port: 443
-  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 38.175.203.11
-- name: 🇯🇵 日本 (Japan) 26 - yjh
-  type: vless
-  server: freshjuniper.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 27 - yjh
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - yjh
-  type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 29 - yjh
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - yjh
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - yjh
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 32 - yjh
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 33 - yjh
-  type: vmess
-  server: 155.248.176.44
-  port: 55216
-  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 34 - yjh
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 35 - yjh
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 36 - yjh
-  type: vless
-  server: 130.12.102.143
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 37 - yjh
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 38 - yjh
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 39 - yjh
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 40 - yjh
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 41 - yjh
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 42 - yjh
-  type: vless
-  server: freshjuniper.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: freshjuniper.download
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 43 - yjh
-  type: vless
-  server: freshjuniper.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: freshjuniper.download
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 44 - yjh
-  type: vless
-  server: 38.175.203.11
-  port: 443
-  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: oulucloud.706666.xyz
-- name: 🇯🇵 日本 (Japan) 45 - yjh
+- name: 🇯🇵 日本 (Japan) 10 - yjh
   type: vless
   server: 104.21.70.21
   port: 443
@@ -496,7 +104,91 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 46 - yjh
+- name: 🇯🇵 日本 (Japan) 11 - yjh
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 12 - yjh
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 13 - yjh
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 14 - yjh
+  type: vmess
+  server: 155.248.176.44
+  port: 55216
+  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - yjh
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 16 - yjh
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 17 - yjh
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - yjh
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 19 - yjh
   type: vless
   server: 38.175.203.11
   port: 443
@@ -505,32 +197,107 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: oulucloud.706666.xyz
-- name: 🇯🇵 日本 (Japan) 47 - yjh
+- name: 🇯🇵 日本 (Japan) 20 - yjh
   type: ss
   server: 45.32.16.53
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: uTBjZhDmOMwBVAJI
   udp: true
-- name: 🇯🇵 日本 (Japan) 48 - yjh
+- name: 🇯🇵 日本 (Japan) 21 - yjh
   type: vless
-  server: freshjuniper.download
+  server: 38.175.203.11
   port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  servername: localhost
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 49 - yjh
+  servername: oulucloud.706666.xyz
+- name: 🇯🇵 日本 (Japan) 22 - yjh
   type: ss
-  server: 149.22.87.240
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 23 - yjh
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 24 - yjh
+  type: ss
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🇯🇵 日本 (Japan) 25 - yjh
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 26 - yjh
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 27 - yjh
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - yjh
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -564,27 +331,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 26 - yjh
   - 🇯🇵 日本 (Japan) 27 - yjh
   - 🇯🇵 日本 (Japan) 28 - yjh
-  - 🇯🇵 日本 (Japan) 29 - yjh
-  - 🇯🇵 日本 (Japan) 30 - yjh
-  - 🇯🇵 日本 (Japan) 31 - yjh
-  - 🇯🇵 日本 (Japan) 32 - yjh
-  - 🇯🇵 日本 (Japan) 33 - yjh
-  - 🇯🇵 日本 (Japan) 34 - yjh
-  - 🇯🇵 日本 (Japan) 35 - yjh
-  - 🇯🇵 日本 (Japan) 36 - yjh
-  - 🇯🇵 日本 (Japan) 37 - yjh
-  - 🇯🇵 日本 (Japan) 38 - yjh
-  - 🇯🇵 日本 (Japan) 39 - yjh
-  - 🇯🇵 日本 (Japan) 40 - yjh
-  - 🇯🇵 日本 (Japan) 41 - yjh
-  - 🇯🇵 日本 (Japan) 42 - yjh
-  - 🇯🇵 日本 (Japan) 43 - yjh
-  - 🇯🇵 日本 (Japan) 44 - yjh
-  - 🇯🇵 日本 (Japan) 45 - yjh
-  - 🇯🇵 日本 (Japan) 46 - yjh
-  - 🇯🇵 日本 (Japan) 47 - yjh
-  - 🇯🇵 日本 (Japan) 48 - yjh
-  - 🇯🇵 日本 (Japan) 49 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -618,26 +364,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 26 - yjh
   - 🇯🇵 日本 (Japan) 27 - yjh
   - 🇯🇵 日本 (Japan) 28 - yjh
-  - 🇯🇵 日本 (Japan) 29 - yjh
-  - 🇯🇵 日本 (Japan) 30 - yjh
-  - 🇯🇵 日本 (Japan) 31 - yjh
-  - 🇯🇵 日本 (Japan) 32 - yjh
-  - 🇯🇵 日本 (Japan) 33 - yjh
-  - 🇯🇵 日本 (Japan) 34 - yjh
-  - 🇯🇵 日本 (Japan) 35 - yjh
-  - 🇯🇵 日本 (Japan) 36 - yjh
-  - 🇯🇵 日本 (Japan) 37 - yjh
-  - 🇯🇵 日本 (Japan) 38 - yjh
-  - 🇯🇵 日本 (Japan) 39 - yjh
-  - 🇯🇵 日本 (Japan) 40 - yjh
-  - 🇯🇵 日本 (Japan) 41 - yjh
-  - 🇯🇵 日本 (Japan) 42 - yjh
-  - 🇯🇵 日本 (Japan) 43 - yjh
-  - 🇯🇵 日本 (Japan) 44 - yjh
-  - 🇯🇵 日本 (Japan) 45 - yjh
-  - 🇯🇵 日本 (Japan) 46 - yjh
-  - 🇯🇵 日本 (Japan) 47 - yjh
-  - 🇯🇵 日本 (Japan) 48 - yjh
-  - 🇯🇵 日本 (Japan) 49 - yjh
 rules:
 - MATCH,PROXIES
