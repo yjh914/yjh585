@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - yjh
   type: vless
-  server: 104.19.214.97
+  server: 104.16.151.21
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - yjh
   type: vless
-  server: 172.64.53.240
+  server: 172.64.147.104
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -34,18 +34,18 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - yjh
   type: vless
-  server: 104.19.214.146
+  server: www.shopify.com
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?ed=2560
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 04 (家宽) - yjh
   type: vless
   server: 172.64.145.202
@@ -62,21 +62,20 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 05 (家宽) - yjh
   type: vless
-  server: 172.64.146.211
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 104.16.106.213
+  port: 8880
+  uuid: 6b89f475-913c-4381-a102-f5e06a129685
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: proud-dawn-56f1.125-85b.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 06 (家宽) - yjh
   type: vless
-  server: 172.64.53.42
+  server: 104.18.42.163
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -90,7 +89,21 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 07 (家宽) - yjh
   type: vless
-  server: 172.64.144.66
+  server: 172.64.53.87
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - yjh
+  type: vless
+  server: 172.64.53.194
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -114,6 +127,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - yjh
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - yjh
   - 🇰🇷 韩国 (South Korea) 07 (家宽) - yjh
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +140,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - yjh
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - yjh
   - 🇰🇷 韩国 (South Korea) 07 (家宽) - yjh
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - yjh
 rules:
 - MATCH,PROXIES
