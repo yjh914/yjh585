@@ -6,14 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - yjh"
+        "🇭🇰 中国香港 (Hong Kong) 01 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 02 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 03 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 04 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 05 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 06 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 07 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 08 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - yjh"
+        "🇭🇰 中国香港 (Hong Kong) 01 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 02 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 03 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 04 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 05 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 06 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 07 - yjh",
+        "🇭🇰 中国香港 (Hong Kong) 08 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - yjh
   type: vless
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torr.wlrus.cfd
+- name: 🇨🇾 CY 02 - yjh
+  type: vless
   server: 194.76.154.31
   port: 40443
   uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
@@ -15,16 +24,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: random
-- name: 🇨🇾 CY 02 - yjh
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
+  client-fingerprint: qq
 - name: 🇨🇾 CY 03 - yjh
   type: vless
   server: 194.76.154.31
@@ -84,7 +84,43 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
+  client-fingerprint: random
+- name: 🇨🇾 CY 08 - yjh
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 09 - yjh
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
   client-fingerprint: chrome
+- name: 🇨🇾 CY 10 - yjh
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +133,9 @@ proxy-groups:
   - 🇨🇾 CY 05 - yjh
   - 🇨🇾 CY 06 - yjh
   - 🇨🇾 CY 07 - yjh
+  - 🇨🇾 CY 08 - yjh
+  - 🇨🇾 CY 09 - yjh
+  - 🇨🇾 CY 10 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,5 +148,8 @@ proxy-groups:
   - 🇨🇾 CY 05 - yjh
   - 🇨🇾 CY 06 - yjh
   - 🇨🇾 CY 07 - yjh
+  - 🇨🇾 CY 08 - yjh
+  - 🇨🇾 CY 09 - yjh
+  - 🇨🇾 CY 10 - yjh
 rules:
 - MATCH,PROXIES
