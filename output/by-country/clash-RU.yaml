@@ -5,11 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pr-media.pepro.site
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: pr-media.pepro.site
+- name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: ss
-  server: 138.124.68.88
-  port: 8388
+  server: 130.49.189.158
+  port: 43558
   cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 02 - yjh
 rules:
 - MATCH,PROXIES
