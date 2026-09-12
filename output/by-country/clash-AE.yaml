@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - yjh
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - yjh
   type: vless
   server: uae.unixzone.us
@@ -31,25 +25,17 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - yjh
-  type: ss
-  server: 188.208.110.58
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - yjh
   type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+  server: 31.58.181.88
+  port: 8443
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: throbbing-haze-fbde.388-6c4.workers.dev
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +44,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - yjh
   - 🇦🇪 阿联酋 (UAE) 02 - yjh
   - 🇦🇪 阿联酋 (UAE) 03 - yjh
-  - 🇦🇪 阿联酋 (UAE) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,6 +52,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - yjh
   - 🇦🇪 阿联酋 (UAE) 02 - yjh
   - 🇦🇪 阿联酋 (UAE) 03 - yjh
-  - 🇦🇪 阿联酋 (UAE) 04 - yjh
 rules:
 - MATCH,PROXIES
