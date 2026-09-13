@@ -6,23 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - yjh
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 - name: 🇪🇪 EE 02 - yjh
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 03 - yjh
   type: vless
   server: 94.183.170.135
   port: 443
@@ -35,7 +31,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 04 - yjh
+- name: 🇪🇪 EE 03 - yjh
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -52,7 +48,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - yjh
   - 🇪🇪 EE 02 - yjh
   - 🇪🇪 EE 03 - yjh
-  - 🇪🇪 EE 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +56,5 @@ proxy-groups:
   - 🇪🇪 EE 01 - yjh
   - 🇪🇪 EE 02 - yjh
   - 🇪🇪 EE 03 - yjh
-  - 🇪🇪 EE 04 - yjh
 rules:
 - MATCH,PROXIES
