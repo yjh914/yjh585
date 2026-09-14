@@ -5,30 +5,61 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
-  type: ss
-  server: 195.58.48.137
-  port: 60111
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+  type: vmess
+  server: 2.27.54.132
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: vless
-  server: 172.64.42.85
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
 - name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
   type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
+  type: vless
+  server: 185.148.106.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -36,7 +67,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: vms.lifetime54.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 06 - yjh
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +90,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
   - 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 05 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 06 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +101,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
   - 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 05 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 06 - yjh
 rules:
 - MATCH,PROXIES
