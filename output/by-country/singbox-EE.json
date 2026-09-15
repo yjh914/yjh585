@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - yjh"
+        "🇪🇪 EE 01 - yjh",
+        "🇪🇪 EE 02 - yjh",
+        "🇪🇪 EE 03 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - yjh"
+        "🇪🇪 EE 01 - yjh",
+        "🇪🇪 EE 02 - yjh",
+        "🇪🇪 EE 03 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },

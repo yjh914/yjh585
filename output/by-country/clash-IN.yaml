@@ -5,21 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - yjh
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.208.1
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
   network: ws
   ws-opts:
-    path: ''
+    path: /sync
     headers:
-      Host: ''
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 02 - yjh
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - yjh
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -34,18 +45,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 03 - yjh
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 04 - yjh
   type: vless
   server: 194.61.31.126
@@ -58,6 +57,19 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - yjh
+  type: vless
+  server: 45.12.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +79,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - yjh
   - 🇮🇳 印度 (India) 03 - yjh
   - 🇮🇳 印度 (India) 04 - yjh
+  - 🇮🇳 印度 (India) 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +89,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - yjh
   - 🇮🇳 印度 (India) 03 - yjh
   - 🇮🇳 印度 (India) 04 - yjh
+  - 🇮🇳 印度 (India) 05 - yjh
 rules:
 - MATCH,PROXIES
