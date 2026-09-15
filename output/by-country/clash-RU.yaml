@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
   type: ss
-  server: 195.133.23.200
+  server: 195.58.48.137
   port: 7018
   cipher: aes-256-gcm
-  password: 81a20429165df87e
+  password: 8ad9d72a5571df86
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  server: 46.17.42.166
+  port: 50111
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
   type: ss
@@ -26,6 +26,13 @@ proxies:
   password: 895b4b796a357570
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
   type: vless
   server: 78.159.247.246
   port: 443
@@ -39,27 +46,20 @@ proxies:
     path: /ws
     headers:
       Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
-  type: ss
-  server: 195.58.48.137
-  port: 7018
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - yjh
   type: vless
-  server: 78.159.247.246
+  server: 46.8.200.91
   port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sb2.hat.onl
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /ws
+    path: /cdn/v3/live
     headers:
-      Host: sb2.hat.onl
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 07 - yjh
   type: vless
   server: 78.159.247.246
@@ -76,24 +76,17 @@ proxies:
       Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 08 - yjh
   type: ss
+  server: 195.133.23.200
+  port: 7018
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - yjh
+  type: ss
   server: 46.17.40.234
   port: 7018
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - yjh
-  type: ss
-  server: 46.17.42.166
-  port: 50111
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - yjh
-  type: ss
-  server: 194.87.196.13
-  port: 7018
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -109,7 +102,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - yjh
   - 🇷🇺 俄罗斯 (Russia) 08 - yjh
   - 🇷🇺 俄罗斯 (Russia) 09 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 10 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,6 +116,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - yjh
   - 🇷🇺 俄罗斯 (Russia) 08 - yjh
   - 🇷🇺 俄罗斯 (Russia) 09 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 10 - yjh
 rules:
 - MATCH,PROXIES
