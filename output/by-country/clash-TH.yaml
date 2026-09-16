@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - yjh
   type: vless
-  server: 43.133.110.81
+  server: 68.64.179.129
   port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+    path: /code?ed=2560fp=chrome
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 02 - yjh
   type: vless
-  server: 43.133.110.81
+  server: 68.64.179.129
   port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+    path: /code?ed=2560
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 03 - yjh
   type: vless
   server: 103.86.49.57
