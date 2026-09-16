@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - yjh"
+        "🇵🇱 PL 01 - yjh",
+        "🇵🇱 PL 02 - yjh",
+        "🇵🇱 PL 03 - yjh",
+        "🇵🇱 PL 04 - yjh",
+        "🇵🇱 PL 05 - yjh",
+        "🇵🇱 PL 06 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - yjh"
+        "🇵🇱 PL 01 - yjh",
+        "🇵🇱 PL 02 - yjh",
+        "🇵🇱 PL 03 - yjh",
+        "🇵🇱 PL 04 - yjh",
+        "🇵🇱 PL 05 - yjh",
+        "🇵🇱 PL 06 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
