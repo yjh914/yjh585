@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - yjh
   type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 02 - yjh
+  type: vless
   server: 89.125.147.199
   port: 443
   uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
@@ -16,11 +29,23 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 02 - yjh
+- name: 🇦🇪 阿联酋 (UAE) 03 - yjh
   type: vless
-  server: www.shopify.com
-  port: 8880
-  uuid: ce977d82-824b-4209-87f1-0719f78d6a2e
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - yjh
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
@@ -28,7 +53,34 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: royal-mode-cf74.210-62d.workers.dev
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - yjh
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - yjh
+  type: vless
+  server: 45.142.166.211
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /knowledge?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +88,10 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - yjh
   - 🇦🇪 阿联酋 (UAE) 02 - yjh
+  - 🇦🇪 阿联酋 (UAE) 03 - yjh
+  - 🇦🇪 阿联酋 (UAE) 04 - yjh
+  - 🇦🇪 阿联酋 (UAE) 05 - yjh
+  - 🇦🇪 阿联酋 (UAE) 06 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -43,5 +99,9 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - yjh
   - 🇦🇪 阿联酋 (UAE) 02 - yjh
+  - 🇦🇪 阿联酋 (UAE) 03 - yjh
+  - 🇦🇪 阿联酋 (UAE) 04 - yjh
+  - 🇦🇪 阿联酋 (UAE) 05 - yjh
+  - 🇦🇪 阿联酋 (UAE) 06 - yjh
 rules:
 - MATCH,PROXIES
