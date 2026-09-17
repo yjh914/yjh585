@@ -20,43 +20,21 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - yjh
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  type: vless
-  server: 104.16.60.10
+  type: vmess
+  server: 47.83.19.148
   port: 443
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hk1.69lover.my
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   network: ws
   ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
+    path: /ws-vmess
     headers:
-      Host: hk1.69lover.my
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - yjh
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: edge
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,8 +42,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 02 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,7 +49,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 02 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 04 - yjh
 rules:
 - MATCH,PROXIES

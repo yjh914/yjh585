@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - yjh
-  type: vless
-  server: 185.162.229.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: ss
+  server: 94.245.88.26
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: p20Y6AFEN1pS7LJX
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime61.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

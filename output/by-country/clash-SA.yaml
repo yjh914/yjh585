@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - yjh
+- name: 🇸🇦 SA 01 - yjh
   type: vless
-  server: 195.85.23.75
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,9 +18,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - yjh
+- name: 🇸🇦 SA 02 - yjh
   type: vless
-  server: 195.85.23.217
+  server: 91.209.253.42
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -32,9 +32,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - yjh
+- name: 🇸🇦 SA 03 - yjh
   type: vless
-  server: 195.85.23.45
+  server: 91.209.253.25
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 04 - yjh
+  type: vless
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - yjh
+- name: 🇸🇦 SA 05 - yjh
   type: vless
-  server: 195.85.23.88
+  server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -60,9 +74,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - yjh
+- name: 🇸🇦 SA 06 - yjh
   type: vless
-  server: 195.85.23.111
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -74,9 +88,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - yjh
+- name: 🇸🇦 SA 07 - yjh
   type: vless
-  server: 195.85.23.252
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -88,9 +102,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - yjh
+- name: 🇸🇦 SA 08 - yjh
   type: vless
-  server: 195.85.23.248
+  server: 91.209.253.216
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 09 - yjh
+  type: vless
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -102,9 +130,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - yjh
+- name: 🇸🇦 SA 10 - yjh
   type: vless
-  server: 195.85.23.219
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -116,9 +144,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - yjh
+- name: 🇸🇦 SA 11 - yjh
   type: vless
-  server: 195.85.23.29
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -130,9 +158,37 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 10 - yjh
+- name: 🇸🇦 SA 12 - yjh
   type: vless
-  server: 195.85.23.47
+  server: 91.209.253.216
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 13 - yjh
+  type: vless
+  server: 91.209.253.243
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 14 - yjh
+  type: vless
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -149,30 +205,38 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - yjh
-  - 🇨🇿 CZ 02 - yjh
-  - 🇨🇿 CZ 03 - yjh
-  - 🇨🇿 CZ 04 - yjh
-  - 🇨🇿 CZ 05 - yjh
-  - 🇨🇿 CZ 06 - yjh
-  - 🇨🇿 CZ 07 - yjh
-  - 🇨🇿 CZ 08 - yjh
-  - 🇨🇿 CZ 09 - yjh
-  - 🇨🇿 CZ 10 - yjh
+  - 🇸🇦 SA 01 - yjh
+  - 🇸🇦 SA 02 - yjh
+  - 🇸🇦 SA 03 - yjh
+  - 🇸🇦 SA 04 - yjh
+  - 🇸🇦 SA 05 - yjh
+  - 🇸🇦 SA 06 - yjh
+  - 🇸🇦 SA 07 - yjh
+  - 🇸🇦 SA 08 - yjh
+  - 🇸🇦 SA 09 - yjh
+  - 🇸🇦 SA 10 - yjh
+  - 🇸🇦 SA 11 - yjh
+  - 🇸🇦 SA 12 - yjh
+  - 🇸🇦 SA 13 - yjh
+  - 🇸🇦 SA 14 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - yjh
-  - 🇨🇿 CZ 02 - yjh
-  - 🇨🇿 CZ 03 - yjh
-  - 🇨🇿 CZ 04 - yjh
-  - 🇨🇿 CZ 05 - yjh
-  - 🇨🇿 CZ 06 - yjh
-  - 🇨🇿 CZ 07 - yjh
-  - 🇨🇿 CZ 08 - yjh
-  - 🇨🇿 CZ 09 - yjh
-  - 🇨🇿 CZ 10 - yjh
+  - 🇸🇦 SA 01 - yjh
+  - 🇸🇦 SA 02 - yjh
+  - 🇸🇦 SA 03 - yjh
+  - 🇸🇦 SA 04 - yjh
+  - 🇸🇦 SA 05 - yjh
+  - 🇸🇦 SA 06 - yjh
+  - 🇸🇦 SA 07 - yjh
+  - 🇸🇦 SA 08 - yjh
+  - 🇸🇦 SA 09 - yjh
+  - 🇸🇦 SA 10 - yjh
+  - 🇸🇦 SA 11 - yjh
+  - 🇸🇦 SA 12 - yjh
+  - 🇸🇦 SA 13 - yjh
+  - 🇸🇦 SA 14 - yjh
 rules:
 - MATCH,PROXIES
