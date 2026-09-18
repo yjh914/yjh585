@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - yjh",
-        "🇨🇭 CH 02 - yjh",
-        "🇨🇭 CH 03 - yjh",
-        "🇨🇭 CH 04 - yjh"
+        "🇨🇭 CH 01 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - yjh",
-        "🇨🇭 CH 02 - yjh",
-        "🇨🇭 CH 03 - yjh",
-        "🇨🇭 CH 04 - yjh"
+        "🇨🇭 CH 01 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
