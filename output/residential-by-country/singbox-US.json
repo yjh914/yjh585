@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN 01 - yjh",
-        "🇻🇳 VN 02 - yjh",
-        "🇻🇳 VN 03 - yjh"
+        "🇺🇸 美国 (United States) 01 (家宽) - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN 01 - yjh",
-        "🇻🇳 VN 02 - yjh",
-        "🇻🇳 VN 03 - yjh"
+        "🇺🇸 美国 (United States) 01 (家宽) - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
