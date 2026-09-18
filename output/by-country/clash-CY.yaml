@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇾 CY 02 - yjh
   type: vless
   server: 45.9.2.171
@@ -37,6 +37,30 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇨🇾 CY 04 - yjh
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 05 - yjh
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +69,8 @@ proxy-groups:
   - 🇨🇾 CY 01 - yjh
   - 🇨🇾 CY 02 - yjh
   - 🇨🇾 CY 03 - yjh
+  - 🇨🇾 CY 04 - yjh
+  - 🇨🇾 CY 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +79,7 @@ proxy-groups:
   - 🇨🇾 CY 01 - yjh
   - 🇨🇾 CY 02 - yjh
   - 🇨🇾 CY 03 - yjh
+  - 🇨🇾 CY 04 - yjh
+  - 🇨🇾 CY 05 - yjh
 rules:
 - MATCH,PROXIES
