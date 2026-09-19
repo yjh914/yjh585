@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - yjh
+- name: 🇦🇲 AM 01 - yjh
   type: vless
-  server: 34.38.82.200
-  port: 443
-  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  server: 95.85.89.70
+  port: 81
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /trade?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - yjh
+  - 🇦🇲 AM 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - yjh
+  - 🇦🇲 AM 01 - yjh
 rules:
 - MATCH,PROXIES
