@@ -5,16 +5,9 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - yjh
-  type: ss
-  server: 23.252.104.131
-  port: 54321
-  cipher: aes-256-gcm
-  password: Proxy2024
-  udp: true
-- name: 🇺🇸 美国 (United States) 02 (家宽) - yjh
   type: vless
   server: 108.162.198.178
-  port: 80
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -30,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - yjh
-  - 🇺🇸 美国 (United States) 02 (家宽) - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - yjh
-  - 🇺🇸 美国 (United States) 02 (家宽) - yjh
 rules:
 - MATCH,PROXIES

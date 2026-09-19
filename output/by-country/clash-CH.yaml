@@ -1,0 +1,78 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇭 CH 01 - yjh
+  type: vless
+  server: 34.158.23.115
+  port: 443
+  uuid: a18f08dc-76ae-453a-98f5-d41eab7e649b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f8aV8naD8NKt_mLKaOou0qUrIM1Ge25kJNxywpF3OB0
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇨🇭 CH 02 - yjh
+  type: vless
+  server: 104.18.28.234
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+- name: 🇨🇭 CH 03 - yjh
+  type: vless
+  server: 34.158.23.115
+  port: 443
+  uuid: a18f08dc-76ae-453a-98f5-d41eab7e649b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: f8aV8naD8NKt_mLKaOou0qUrIM1Ge25kJNxywpF3OB0
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇨🇭 CH 04 - yjh
+  type: vless
+  server: 104.18.28.234
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇭 CH 01 - yjh
+  - 🇨🇭 CH 02 - yjh
+  - 🇨🇭 CH 03 - yjh
+  - 🇨🇭 CH 04 - yjh
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇭 CH 01 - yjh
+  - 🇨🇭 CH 02 - yjh
+  - 🇨🇭 CH 03 - yjh
+  - 🇨🇭 CH 04 - yjh
+rules:
+- MATCH,PROXIES

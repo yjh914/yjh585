@@ -6,21 +6,35 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - yjh
   type: vless
-  server: 64.225.110.247
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /acg/buy/ajax
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: cdn8848.776676.xyz
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - yjh
   type: vless
-  server: 195.85.23.29
+  server: 66.81.247.155
+  port: 2083
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: testmikonim.hydrymhmdamyn7.workers.dev
+  network: ws
+  ws-opts:
+    path: /OAZko425kNFF0PpQ
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+- name: 🇨🇿 CZ 03 - yjh
+  type: vless
+  server: 195.85.23.248
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - yjh
   - 🇨🇿 CZ 02 - yjh
+  - 🇨🇿 CZ 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - yjh
   - 🇨🇿 CZ 02 - yjh
+  - 🇨🇿 CZ 03 - yjh
 rules:
 - MATCH,PROXIES
