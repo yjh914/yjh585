@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
   type: vless
-  server: 132.243.203.207
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /lives
+    path: /cdn/v3/live
     headers:
-      Host: cdn8848.776676.xyz
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: vless
   server: 46.8.200.91
@@ -32,41 +32,6 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  type: vless
-  server: 185.113.223.183
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
-  type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 05 - yjh
 rules:
 - MATCH,PROXIES
