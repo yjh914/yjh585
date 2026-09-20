@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - yjh
   type: vless
-  server: 31.43.179.106
+  server: 31.43.179.36
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -15,12 +15,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 02 - yjh
   type: vless
-  server: 31.43.179.36
+  server: 31.43.179.200
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -34,6 +34,132 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 03 - yjh
   type: vless
+  server: 31.43.179.170
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 04 - yjh
+  type: vless
+  server: 31.43.179.20
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 05 - yjh
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 06 - yjh
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 07 - yjh
+  type: vless
+  server: 31.43.179.36
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 08 - yjh
+  type: vless
+  server: 31.43.179.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 09 - yjh
+  type: vless
+  server: 31.43.179.109
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 10 - yjh
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 11 - yjh
+  type: vless
+  server: 31.43.179.137
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 12 - yjh
+  type: vless
   server: 31.43.179.8
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -43,10 +169,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 04 - yjh
+- name: 🇰🇿 KZ 13 - yjh
   type: vless
   server: 31.43.179.200
   port: 443
@@ -57,12 +183,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 05 - yjh
+- name: 🇰🇿 KZ 14 - yjh
   type: vless
-  server: 31.43.179.200
+  server: 31.43.179.87
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -71,7 +197,7 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 proxy-groups:
@@ -84,6 +210,15 @@ proxy-groups:
   - 🇰🇿 KZ 03 - yjh
   - 🇰🇿 KZ 04 - yjh
   - 🇰🇿 KZ 05 - yjh
+  - 🇰🇿 KZ 06 - yjh
+  - 🇰🇿 KZ 07 - yjh
+  - 🇰🇿 KZ 08 - yjh
+  - 🇰🇿 KZ 09 - yjh
+  - 🇰🇿 KZ 10 - yjh
+  - 🇰🇿 KZ 11 - yjh
+  - 🇰🇿 KZ 12 - yjh
+  - 🇰🇿 KZ 13 - yjh
+  - 🇰🇿 KZ 14 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +229,14 @@ proxy-groups:
   - 🇰🇿 KZ 03 - yjh
   - 🇰🇿 KZ 04 - yjh
   - 🇰🇿 KZ 05 - yjh
+  - 🇰🇿 KZ 06 - yjh
+  - 🇰🇿 KZ 07 - yjh
+  - 🇰🇿 KZ 08 - yjh
+  - 🇰🇿 KZ 09 - yjh
+  - 🇰🇿 KZ 10 - yjh
+  - 🇰🇿 KZ 11 - yjh
+  - 🇰🇿 KZ 12 - yjh
+  - 🇰🇿 KZ 13 - yjh
+  - 🇰🇿 KZ 14 - yjh
 rules:
 - MATCH,PROXIES
