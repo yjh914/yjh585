@@ -4,9 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - yjh
+- name: 🇦🇹 AT 01 - yjh
   type: vless
-  server: 103.251.167.112
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 02 - yjh
+  type: vless
+  server: 132.243.203.207
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -15,21 +27,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /library/lang?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇨 SC 02 - yjh
-  type: vless
-  server: 164.92.147.213
-  port: 2087
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /city/my
+    path: /lives
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -37,14 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - yjh
-  - 🇸🇨 SC 02 - yjh
+  - 🇦🇹 AT 01 - yjh
+  - 🇦🇹 AT 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - yjh
-  - 🇸🇨 SC 02 - yjh
+  - 🇦🇹 AT 01 - yjh
+  - 🇦🇹 AT 02 - yjh
 rules:
 - MATCH,PROXIES
