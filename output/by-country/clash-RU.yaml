@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
   type: vless
-  server: 64.225.110.247
-  port: 2083
+  server: 144.31.28.106
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -15,12 +15,12 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /trade
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: vless
-  server: 5.104.107.80
+  server: 109.107.155.76
   port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -29,37 +29,23 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /act/clip/directory?ed=2560fp=chrome
+    path: /tv/member/auth?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
-  type: vless
-  server: 188.114.97.1
+  server: 193.181.216.117
   port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
   - 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
   - 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
 rules:
 - MATCH,PROXIES
