@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - yjh"
+        "🇮🇪 IE 01 - yjh",
+        "🇮🇪 IE 02 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - yjh"
+        "🇮🇪 IE 01 - yjh",
+        "🇮🇪 IE 02 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },

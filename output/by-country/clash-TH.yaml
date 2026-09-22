@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 02 - yjh
   type: vless
   server: 34.15.162.1
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 03 - yjh
   type: vless
   server: 34.15.162.1
@@ -39,71 +39,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 04 - yjh
-  type: vless
-  server: 43.133.110.81
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 05 - yjh
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 06 - yjh
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇹🇭 TH 07 - yjh
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇭 TH 08 - yjh
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 09 - yjh
+- name: 🇹🇭 TH 04 - yjh
   type: vless
   server: 34.15.162.1
   port: 443
@@ -115,20 +52,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: qq
-- name: 🇹🇭 TH 10 - yjh
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇹🇭 TH 11 - yjh
+- name: 🇹🇭 TH 05 - yjh
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -153,12 +77,6 @@ proxy-groups:
   - 🇹🇭 TH 03 - yjh
   - 🇹🇭 TH 04 - yjh
   - 🇹🇭 TH 05 - yjh
-  - 🇹🇭 TH 06 - yjh
-  - 🇹🇭 TH 07 - yjh
-  - 🇹🇭 TH 08 - yjh
-  - 🇹🇭 TH 09 - yjh
-  - 🇹🇭 TH 10 - yjh
-  - 🇹🇭 TH 11 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -169,11 +87,5 @@ proxy-groups:
   - 🇹🇭 TH 03 - yjh
   - 🇹🇭 TH 04 - yjh
   - 🇹🇭 TH 05 - yjh
-  - 🇹🇭 TH 06 - yjh
-  - 🇹🇭 TH 07 - yjh
-  - 🇹🇭 TH 08 - yjh
-  - 🇹🇭 TH 09 - yjh
-  - 🇹🇭 TH 10 - yjh
-  - 🇹🇭 TH 11 - yjh
 rules:
 - MATCH,PROXIES
