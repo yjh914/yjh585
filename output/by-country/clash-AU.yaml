@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 02 - yjh
   type: vless
   server: 34.87.229.148
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - yjh
   type: vless
   server: 34.87.229.148
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 04 - yjh
   type: vless
   server: 34.87.244.111
@@ -51,8 +51,22 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇦🇺 澳大利亚 (Australia) 05 - yjh
+  type: vless
+  server: nova.freshnet.ir
+  port: 2082
+  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nova.freshnet.ir
+  network: ws
+  ws-opts:
+    path: /cats/FslNz
+    headers:
+      Host: nova.freshnet.ir
+- name: 🇦🇺 澳大利亚 (Australia) 06 - yjh
   type: vless
   server: 34.87.244.111
   port: 443
@@ -63,21 +77,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 06 - yjh
-  type: vless
-  server: 208.103.161.5
-  port: 443
-  uuid: d042a74a-c305-4eec-a89f-39a348022c92
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  client-fingerprint: ios
 - name: 🇦🇺 澳大利亚 (Australia) 07 - yjh
   type: vless
   server: 34.87.229.148
@@ -104,32 +104,28 @@ proxies:
   client-fingerprint: qq
 - name: 🇦🇺 澳大利亚 (Australia) 09 - yjh
   type: vless
-  server: 202.166.187.132
+  server: 34.87.244.111
   port: 443
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: f.yoptybla.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.yoptybla.ru
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 10 - yjh
   type: vless
-  server: 123.51.23.113
+  server: 34.87.229.148
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 11 - yjh
   type: vless
   server: 34.87.244.111
@@ -153,7 +149,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 13 - yjh
   type: vless
   server: 34.87.244.111
@@ -165,7 +161,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
