@@ -19,13 +19,6 @@ proxies:
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - yjh
-  type: ss
-  server: p1tun3.greewebservices.ir
-  port: 2070
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
-  udp: true
-- name: 🇫🇮 FI 03 - yjh
   type: vless
   server: 151.101.56.6
   port: 443
@@ -39,7 +32,7 @@ proxies:
     path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - yjh
+- name: 🇫🇮 FI 03 - yjh
   type: vless
   server: a2.arshia-nova.ir
   port: 443
@@ -53,29 +46,13 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 05 - yjh
-  type: vless
-  server: karo.rick313.dpdns.org
-  port: 2087
-  uuid: 2e4e6812-be87-415b-a2e8-b0e17e9f2da7
+- name: 🇫🇮 FI 04 - yjh
+  type: ss
+  server: p1tun3.greewebservices.ir
+  port: 2070
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: karo.rick313.dpdns.org
-- name: 🇫🇮 FI 06 - yjh
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,8 +62,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
   - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
-  - 🇫🇮 FI 06 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,7 +71,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
   - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
-  - 🇫🇮 FI 06 - yjh
 rules:
 - MATCH,PROXIES
