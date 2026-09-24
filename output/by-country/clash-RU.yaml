@@ -6,26 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
   type: vless
-  server: 46.8.200.91
+  server: 104.21.69.37
   port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  type: ss
-  server: 62.113.41.165
-  port: 888
-  cipher: chacha20-ietf-poly1305
-  password: hF-qqin2wYhP7zS47SyR0Q
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -46,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
 rules:
 - MATCH,PROXIES
