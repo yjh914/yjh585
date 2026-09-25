@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - yjh
-  type: ss
-  server: 192.209.62.92
-  port: 211
-  cipher: chacha20-ietf-poly1305
-  password: 6B-X_OuMsGxWj0AhJ9aMdpht_hQfYeNz
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - yjh
   type: vmess
   server: 103.215.218.158
   port: 22324
@@ -27,13 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - yjh
-  - 🇹🇷 土耳其 (Turkey) 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - yjh
-  - 🇹🇷 土耳其 (Turkey) 02 - yjh
 rules:
 - MATCH,PROXIES
