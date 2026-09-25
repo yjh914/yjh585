@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - yjh
   type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ws
     headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 02 - yjh
   type: vless
   server: 103.86.49.57
