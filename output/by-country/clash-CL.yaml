@@ -32,7 +32,7 @@ proxies:
       Host: platform103.halalkhor.info
 - name: 🇨🇱 CL 03 - yjh
   type: vless
-  server: platform115.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -40,9 +40,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform115
+    path: /platform107
     headers:
-      Host: platform115.halalkhor.info
+      Host: platform107.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
