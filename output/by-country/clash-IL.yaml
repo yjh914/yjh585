@@ -18,17 +18,32 @@ proxies:
     path: /cdn/99294c014f2c7791?ed=2056
     headers:
       Host: fserver-worker-001.mapleridgeway.top
+- name: 🇮🇱 IL 02 - yjh
+  type: vless
+  server: chat.openai.com
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇱 IL 01 - yjh
+  - 🇮🇱 IL 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 IL 01 - yjh
+  - 🇮🇱 IL 02 - yjh
 rules:
 - MATCH,PROXIES
