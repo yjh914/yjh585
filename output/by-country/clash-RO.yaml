@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - yjh
+- name: 🇷🇴 RO 01 - yjh
   type: ss
-  server: 124.151.25.50
-  port: 8024
-  cipher: aes-128-gcm
-  password: 2wsxcde4
+  server: 80.97.27.106
+  port: 111
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - yjh
+  - 🇷🇴 RO 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - yjh
+  - 🇷🇴 RO 01 - yjh
 rules:
 - MATCH,PROXIES
