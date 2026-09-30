@@ -5,92 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - yjh
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - yjh
-  type: vmess
-  server: 47.243.65.243
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  type: vless
-  server: 103.71.23.247
-  port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk.152568.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - yjh
-  type: vless
-  server: 162.159.39.218
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - yjh
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - yjh
-  type: vless
-  server: 104.18.34.14
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - yjh
   type: vless
   server: 85.149.211.28
   port: 8443
@@ -104,21 +18,7 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - yjh
-  type: vless
-  server: 45.82.244.40
-  port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk.152568.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - yjh
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - yjh
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -134,9 +34,25 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - yjh
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
+  type: vmess
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - yjh
   type: vless
-  server: 74.82.192.82
+  server: 45.82.244.40
   port: 443
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   udp: true
@@ -148,20 +64,7 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - yjh
-  type: vless
-  server: 172.64.229.2
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - yjh
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - yjh
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -177,23 +80,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - yjh
-  type: vmess
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: I2PSm3Knof5qjjix.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: I2PSm3Knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - yjh
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - yjh
   type: vless
   server: 5.223.51.84
   port: 443
@@ -207,37 +94,22 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - yjh
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - yjh
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - yjh
-  type: vmess
-  server: 194.99.79.26
+  server: 47.243.65.243
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -250,15 +122,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 06 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 07 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 08 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 09 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 10 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 11 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 12 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 13 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 14 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 15 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 16 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -271,14 +134,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 06 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 07 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 08 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 09 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 10 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 11 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 12 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 13 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 14 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 15 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 16 - yjh
 rules:
 - MATCH,PROXIES
