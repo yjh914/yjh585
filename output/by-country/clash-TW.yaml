@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - yjh
   type: vless
-  server: 60.248.219.53
+  server: 59.125.69.23
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - yjh
   type: vless
-  server: 60.248.219.78
+  server: 60.248.219.53
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
@@ -133,6 +133,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 13 - yjh
+  type: vless
+  server: 60.248.219.78
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - yjh
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -160,6 +174,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 11 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 12 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 13 - yjh
+  - 🇹🇼 中国台湾 (Taiwan) 14 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -178,5 +193,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 11 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 12 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 13 - yjh
+  - 🇹🇼 中国台湾 (Taiwan) 14 - yjh
 rules:
 - MATCH,PROXIES
