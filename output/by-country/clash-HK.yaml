@@ -37,21 +37,28 @@ proxies:
     headers:
       Host: jmp1.907737.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  type: ss
-  server: telegramx.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - yjh
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  type: vmess
+  server: 194.99.79.26
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 195.58.144.56
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - yjh
+  type: ss
+  server: telegram.khp25.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+  udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - yjh
   type: vless
   server: 195.58.144.56
@@ -71,65 +78,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - yjh
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - yjh
-  type: ss
-  server: telegram.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - yjh
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
   servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - yjh
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 156.245.232.239
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,10 +95,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 05 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 06 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 07 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 08 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 09 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 10 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,9 +106,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 05 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 06 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 07 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 08 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 09 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 10 - yjh
 rules:
 - MATCH,PROXIES

@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - yjh
-  type: vless
-  server: 64.176.15.110
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇨🇱 CL 02 - yjh
   type: ss
   server: 64.176.2.21
   port: 8388
@@ -31,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇱 CL 01 - yjh
-  - 🇨🇱 CL 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 CL 01 - yjh
-  - 🇨🇱 CL 02 - yjh
 rules:
 - MATCH,PROXIES
