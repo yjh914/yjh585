@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - yjh
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 02 - yjh
   type: vless
   server: uae.unixzone.us
@@ -45,7 +46,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - yjh
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -71,43 +72,46 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - yjh
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 130.49.163.54
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 07 - yjh
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 08 - yjh
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 147.78.0.186
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 09 - yjh
   type: vless
   server: uae.unixzone.us
@@ -147,6 +151,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - yjh
+  type: vless
+  server: 89.125.139.115
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -163,6 +181,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - yjh
   - 🇦🇪 阿联酋 (UAE) 10 - yjh
   - 🇦🇪 阿联酋 (UAE) 11 - yjh
+  - 🇦🇪 阿联酋 (UAE) 12 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -179,5 +198,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - yjh
   - 🇦🇪 阿联酋 (UAE) 10 - yjh
   - 🇦🇪 阿联酋 (UAE) 11 - yjh
+  - 🇦🇪 阿联酋 (UAE) 12 - yjh
 rules:
 - MATCH,PROXIES
