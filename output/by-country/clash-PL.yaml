@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - yjh
+- name: 🇵🇱 PL 01 - yjh
   type: vless
-  server: 172.67.209.13
-  port: 443
-  uuid: fa45096d-bed0-ad80-c773-23c30000001b
+  server: 89.144.32.247
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - yjh
+  - 🇵🇱 PL 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - yjh
+  - 🇵🇱 PL 01 - yjh
 rules:
 - MATCH,PROXIES
