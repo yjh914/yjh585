@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - yjh
+  type: vless
+  server: 104.18.34.21
+  port: 8443
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: socks5.revil-time3.workers.dev
+  network: ws
+  ws-opts:
+    path: /socks5://128.140.46.169:13482
+    headers:
+      Host: socks5.revil-time3.workers.dev
+- name: 🇨🇿 CZ 02 - yjh
+  type: vless
+  server: 104.21.51.145
+  port: 8443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇨🇿 CZ 03 - yjh
+  type: vless
+  server: 173.245.49.92
+  port: 443
+  uuid: 957a8c6c-3f5b-4588-bc95-7578c42350bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: HAsanTraIdER.hidj51PIMU26iaL1abMZyF.wORKERS.DEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQ0hmbjB5R2xvRXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: hasantraider.hidj51pimu26ial1abmzyf.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - yjh
+  - 🇨🇿 CZ 02 - yjh
+  - 🇨🇿 CZ 03 - yjh
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - yjh
+  - 🇨🇿 CZ 02 - yjh
+  - 🇨🇿 CZ 03 - yjh
+rules:
+- MATCH,PROXIES
