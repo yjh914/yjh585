@@ -13,19 +13,12 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - yjh
   type: ss
-  server: 20.87.209.138
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: D3QZyKA9jtLektTN
-  udp: true
-- name: 🇿🇦 ZA 03 - yjh
-  type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇿🇦 ZA 04 - yjh
+- name: 🇿🇦 ZA 03 - yjh
   type: ss
   server: 102.133.165.160
   port: 16233
@@ -40,7 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - yjh
   - 🇿🇦 ZA 02 - yjh
   - 🇿🇦 ZA 03 - yjh
-  - 🇿🇦 ZA 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - yjh
   - 🇿🇦 ZA 02 - yjh
   - 🇿🇦 ZA 03 - yjh
-  - 🇿🇦 ZA 04 - yjh
 rules:
 - MATCH,PROXIES
