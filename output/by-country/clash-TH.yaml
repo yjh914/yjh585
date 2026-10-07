@@ -5,6 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - yjh
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 02 - yjh
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 03 - yjh
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -14,7 +41,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇭 TH 02 - yjh
+- name: 🇹🇭 TH 04 - yjh
+  type: vless
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 TH 05 - yjh
   type: vless
   server: 103.86.49.57
   port: 80
@@ -34,6 +74,9 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - yjh
   - 🇹🇭 TH 02 - yjh
+  - 🇹🇭 TH 03 - yjh
+  - 🇹🇭 TH 04 - yjh
+  - 🇹🇭 TH 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +84,8 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - yjh
   - 🇹🇭 TH 02 - yjh
+  - 🇹🇭 TH 03 - yjh
+  - 🇹🇭 TH 04 - yjh
+  - 🇹🇭 TH 05 - yjh
 rules:
 - MATCH,PROXIES
