@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇷 AR 01 - yjh
+- name: 🇱🇻 LV 01 - yjh
   type: vless
-  server: 131.255.6.88
+  server: 217.19.4.61
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
+    path: /vws/
     headers:
-      Host: free.cndyw.ggff.net
+      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇷 AR 01 - yjh
+  - 🇱🇻 LV 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇷 AR 01 - yjh
+  - 🇱🇻 LV 01 - yjh
 rules:
 - MATCH,PROXIES
