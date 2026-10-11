@@ -14,32 +14,31 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 FI 02 - yjh
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 83914feb-8d46-45d5-9683-132ff1d86d80
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - yjh
+  type: vless
+  server: 65.109.188.155
+  port: 443
+  uuid: 9f9b66ba-e964-4e0e-be38-293134868a67
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gadfather.zovip2.ir
   network: ws
   ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    path: /gropcdn
     headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 03 - yjh
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
+      Host: gadfather.zovip2.ir
 - name: 🇫🇮 FI 04 - yjh
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 05 - yjh
   type: ss
   server: 185.103.110.66
   port: 18280
@@ -55,7 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
   - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,6 +63,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
   - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
 rules:
 - MATCH,PROXIES
