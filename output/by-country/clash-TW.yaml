@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - yjh
   type: vless
-  server: 60.248.219.53
+  server: 60.248.219.78
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
@@ -17,28 +17,12 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.53
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - yjh
-  type: vmess
-  server: 24864168545164.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - yjh
   type: vless
-  server: 59.125.69.24
+  server: 60.248.219.78
   port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
@@ -47,7 +31,23 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 59.125.69.24
+      Host: 60.248.219.78
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - yjh
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 654168416355441.d6f54hd1j.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 654168416355441.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - yjh
   type: vless
   server: 60.248.219.54
@@ -64,100 +64,6 @@ proxies:
       Host: 60.248.219.54
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - yjh
   type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - yjh
-  type: vless
-  server: 59.125.69.23
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 59.125.69.23
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - yjh
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 654168416355441.d6f54hd1j.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - yjh
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - yjh
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - yjh
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - yjh
-  type: vmess
   server: 24864168545164.d6f54hd1j.cc
   port: 443
   uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
@@ -166,42 +72,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 24864168545164.d6f54hd1j.cc
+  servername: ''
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 24864168545164.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - yjh
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 654168416355441.d6f54hd1j.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - yjh
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -212,14 +88,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 04 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 05 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 06 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 07 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 08 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 09 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 10 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 11 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 12 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 13 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -230,13 +98,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 04 - yjh
   - 🇹🇼 中国台湾 (Taiwan) 05 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 06 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 07 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 08 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 09 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 10 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 11 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 12 - yjh
-  - 🇹🇼 中国台湾 (Taiwan) 13 - yjh
 rules:
 - MATCH,PROXIES
