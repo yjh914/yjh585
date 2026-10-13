@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - yjh
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - yjh
   type: ss
   server: 185.103.110.66
@@ -24,13 +19,6 @@ proxies:
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
 - name: 🇫🇮 FI 03 - yjh
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 04 - yjh
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -38,13 +26,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 05 - yjh
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +34,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - yjh
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
-  - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,7 +42,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - yjh
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
-  - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
 rules:
 - MATCH,PROXIES
