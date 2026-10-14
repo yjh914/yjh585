@@ -5,36 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - yjh
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /cctv13.m3u8
     headers:
-      Host: jp3.yohototo.top
+      Host: jp01.a0a.xyz
 - name: 🇯🇵 日本 (Japan) 02 - yjh
   type: vless
-  server: 104.16.10.104
+  server: 43.167.232.174
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+  reality-opts:
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 03 - yjh
   type: vless
-  server: 104.16.10.63
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -48,7 +47,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 04 - yjh
   type: vless
-  server: 104.24.31.89
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -61,67 +60,6 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 05 - yjh
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 06 - yjh
-  type: vless
-  server: 107.189.26.160
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 07 - yjh
-  type: vless
-  server: 43.167.232.174
-  port: 443
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-  servername: www.microsoft.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 08 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 09 - yjh
-  type: vless
-  server: 104.16.111.202
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - yjh
   type: vless
   server: 104.19.33.237
   port: 443
@@ -135,9 +73,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - yjh
+- name: 🇯🇵 日本 (Japan) 06 - yjh
   type: vless
-  server: 43.170.8.95
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -149,9 +87,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 12 - yjh
+- name: 🇯🇵 日本 (Japan) 07 - yjh
   type: vless
-  server: 104.17.210.74
+  server: 104.19.12.94
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -163,7 +101,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - yjh
+- name: 🇯🇵 日本 (Japan) 08 - yjh
   type: vless
   server: 104.16.111.102
   port: 443
@@ -177,21 +115,63 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 14 - yjh
+- name: 🇯🇵 日本 (Japan) 09 - yjh
   type: vless
-  server: 172.67.155.65
-  port: 8443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 143.20.156.116
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /tyxyws
     headers:
-      Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 15 - yjh
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 10 - yjh
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - yjh
+  type: vless
+  server: 104.16.10.22
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 12 - yjh
+  type: vless
+  server: 43.170.8.95
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 13 - yjh
   type: vless
   server: 43.167.232.174
   port: 443
@@ -202,8 +182,112 @@ proxies:
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
   servername: www.microsoft.com
-  client-fingerprint: firefox
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 14 - yjh
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 15 - yjh
+  type: vless
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 16 - yjh
+  type: vless
+  server: 43.167.232.174
+  port: 443
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+  servername: www.microsoft.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 17 - yjh
+  type: vless
+  server: 104.24.31.89
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 18 - yjh
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 19 - yjh
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 20 - yjh
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 21 - yjh
+  type: vless
+  server: 104.17.210.74
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 22 - yjh
   type: vmess
   server: jp5.998998.best
   port: 443
@@ -219,351 +303,80 @@ proxies:
     path: /ieusrdgfhteuirgfiuws
     headers:
       Host: server11.9966338.xyz
-- name: 🇯🇵 日本 (Japan) 17 - yjh
+- name: 🇯🇵 日本 (Japan) 23 - yjh
   type: ss
   server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 18 - yjh
+- name: 🇯🇵 日本 (Japan) 24 - yjh
   type: vless
-  server: cf.090227.xyz
+  server: 43.167.232.174
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 19 - yjh
+  reality-opts:
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 25 - yjh
   type: ss
   server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 20 - yjh
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - yjh
-  type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 23 - yjh
-  type: vless
-  server: 43.167.232.174
-  port: 443
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-  servername: www.microsoft.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 24 - yjh
-  type: vless
-  server: 104.16.10.84
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - yjh
-  type: vless
-  server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
 - name: 🇯🇵 日本 (Japan) 26 - yjh
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 27 - yjh
   type: vless
-  server: 43.167.232.174
+  server: 104.16.10.48
   port: 443
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 27 - yjh
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: 🇯🇵 日本 (Japan) 28 - yjh
   type: vless
-  server: 172.67.156.147
+  server: 43.167.232.174
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+  reality-opts:
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+  servername: www.microsoft.com
+  client-fingerprint: ios
 - name: 🇯🇵 日本 (Japan) 29 - yjh
   type: vless
-  server: 172.64.146.66
+  server: 104.16.10.2
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /tyxyws
     headers:
-      Host: lucasjow.us.ci
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 30 - yjh
-  type: vless
-  server: 104.16.10.56
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - yjh
-  type: vless
-  server: 43.167.232.174
-  port: 443
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-  servername: www.microsoft.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 32 - yjh
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 33 - yjh
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 34 - yjh
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 35 - yjh
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 36 - yjh
-  type: vless
-  server: 43.167.232.174
-  port: 443
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 37 - yjh
-  type: vless
-  server: 104.16.10.63
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 38 - yjh
-  type: vless
-  server: 104.16.10.22
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 39 - yjh
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 40 - yjh
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 41 - yjh
-  type: vless
-  server: 104.16.111.202
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 42 - yjh
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 43 - yjh
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 44 - yjh
   type: vless
   server: 104.16.111.195
   port: 443
@@ -577,9 +390,31 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 45 - yjh
+- name: 🇯🇵 日本 (Japan) 31 - yjh
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 32 - yjh
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 33 - yjh
   type: vless
-  server: 188.114.98.0
+  server: cf.090227.xyz
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -591,16 +426,16 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 46 - yjh
+- name: 🇯🇵 日本 (Japan) 34 - yjh
   type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 47 - yjh
+- name: 🇯🇵 日本 (Japan) 35 - yjh
   type: vless
-  server: 162.159.254.3
+  server: 104.16.10.63
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -612,9 +447,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 48 - yjh
+- name: 🇯🇵 日本 (Japan) 36 - yjh
   type: vless
-  server: 162.159.254.3
+  server: 152.69.200.216
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -626,6 +461,32 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 37 - yjh
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 38 - yjh
+  type: vless
+  server: 43.167.232.174
+  port: 443
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+  servername: www.microsoft.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -669,16 +530,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 36 - yjh
   - 🇯🇵 日本 (Japan) 37 - yjh
   - 🇯🇵 日本 (Japan) 38 - yjh
-  - 🇯🇵 日本 (Japan) 39 - yjh
-  - 🇯🇵 日本 (Japan) 40 - yjh
-  - 🇯🇵 日本 (Japan) 41 - yjh
-  - 🇯🇵 日本 (Japan) 42 - yjh
-  - 🇯🇵 日本 (Japan) 43 - yjh
-  - 🇯🇵 日本 (Japan) 44 - yjh
-  - 🇯🇵 日本 (Japan) 45 - yjh
-  - 🇯🇵 日本 (Japan) 46 - yjh
-  - 🇯🇵 日本 (Japan) 47 - yjh
-  - 🇯🇵 日本 (Japan) 48 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -722,15 +573,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 36 - yjh
   - 🇯🇵 日本 (Japan) 37 - yjh
   - 🇯🇵 日本 (Japan) 38 - yjh
-  - 🇯🇵 日本 (Japan) 39 - yjh
-  - 🇯🇵 日本 (Japan) 40 - yjh
-  - 🇯🇵 日本 (Japan) 41 - yjh
-  - 🇯🇵 日本 (Japan) 42 - yjh
-  - 🇯🇵 日本 (Japan) 43 - yjh
-  - 🇯🇵 日本 (Japan) 44 - yjh
-  - 🇯🇵 日本 (Japan) 45 - yjh
-  - 🇯🇵 日本 (Japan) 46 - yjh
-  - 🇯🇵 日本 (Japan) 47 - yjh
-  - 🇯🇵 日本 (Japan) 48 - yjh
 rules:
 - MATCH,PROXIES
