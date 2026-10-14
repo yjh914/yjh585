@@ -13,6 +13,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇫🇮 FI 02 - yjh
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 03 - yjh
   type: vless
   server: 199.232.239.239
   port: 443
@@ -26,13 +33,6 @@ proxies:
     path: /?
     headers:
       Host: mr_anonoijji.global.ssl.fastly.net
-- name: 🇫🇮 FI 03 - yjh
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
