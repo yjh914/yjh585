@@ -6,32 +6,24 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - yjh
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /?Telegram---mehrosaboran
+    path: /vless/
     headers:
-      Host: lucasjow.us.ci
+      Host: 152.228.162.19
 - name: 🇫🇷 法国 (France) 02 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---DailyConfigs---DailyConfigs---DailyConfigs
-    headers:
-      Host: lucasjow.us.ci
 - name: 🇫🇷 法国 (France) 03 - yjh
   type: vmess
   server: 145.239.55.210
@@ -48,156 +40,13 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 04 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 05 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 06 - yjh
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - yjh
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 08 - yjh
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 09 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 10 - yjh
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - yjh
   type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 12 - yjh
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 13 - yjh
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 14 - yjh
-  type: vless
-  server: 188.114.97.6
+  server: 54.36.174.140
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---mehrosaboran
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 15 - yjh
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 16 - yjh
+- name: 🇫🇷 法国 (France) 05 - yjh
   type: vmess
   server: 54.37.131.126
   port: 80
@@ -212,27 +61,17 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 17 - yjh
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+- name: 🇫🇷 法国 (France) 06 - yjh
+  type: vmess
+  server: 188.121.120.86
+  port: 30610
+  uuid: 874a6b6d-d569-4b64-b9a6-32d594e61325
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 18 - yjh
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 19 - yjh
+- name: 🇫🇷 法国 (France) 07 - yjh
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -243,38 +82,72 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 20 - yjh
-  type: vless
-  server: 188.114.97.6
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 08 - yjh
+  type: ss
+  server: pl140.vpnbook.com
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?SAFEWEBS_SAFEWEBS_SAFEWEBS_SAFEWEBS
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 21 - yjh
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+- name: 🇫🇷 法国 (France) 09 - yjh
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 22 - yjh
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 10 - yjh
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 11 - yjh
+  type: vless
+  server: 199.232.78.170
+  port: 443
+  uuid: XpnTeam-1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 12 - yjh
+  type: vless
+  server: 140.248.186.45
+  port: 443
+  uuid: XpnTeam-2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 13 - yjh
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -283,21 +156,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 23 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: '%25'
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇫🇷 法国 (France) 24 - yjh
+- name: 🇫🇷 法国 (France) 14 - yjh
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -331,16 +190,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - yjh
   - 🇫🇷 法国 (France) 13 - yjh
   - 🇫🇷 法国 (France) 14 - yjh
-  - 🇫🇷 法国 (France) 15 - yjh
-  - 🇫🇷 法国 (France) 16 - yjh
-  - 🇫🇷 法国 (France) 17 - yjh
-  - 🇫🇷 法国 (France) 18 - yjh
-  - 🇫🇷 法国 (France) 19 - yjh
-  - 🇫🇷 法国 (France) 20 - yjh
-  - 🇫🇷 法国 (France) 21 - yjh
-  - 🇫🇷 法国 (France) 22 - yjh
-  - 🇫🇷 法国 (France) 23 - yjh
-  - 🇫🇷 法国 (France) 24 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -360,15 +209,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - yjh
   - 🇫🇷 法国 (France) 13 - yjh
   - 🇫🇷 法国 (France) 14 - yjh
-  - 🇫🇷 法国 (France) 15 - yjh
-  - 🇫🇷 法国 (France) 16 - yjh
-  - 🇫🇷 法国 (France) 17 - yjh
-  - 🇫🇷 法国 (France) 18 - yjh
-  - 🇫🇷 法国 (France) 19 - yjh
-  - 🇫🇷 法国 (France) 20 - yjh
-  - 🇫🇷 法国 (France) 21 - yjh
-  - 🇫🇷 法国 (France) 22 - yjh
-  - 🇫🇷 法国 (France) 23 - yjh
-  - 🇫🇷 法国 (France) 24 - yjh
 rules:
 - MATCH,PROXIES
