@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - yjh
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 02 - yjh
   type: vmess
   server: 132.145.80.230
@@ -35,17 +27,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇰🇷 韩国 (South Korea) 03 - yjh
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 04 - yjh
   type: vless
   server: 151.245.106.49
@@ -57,22 +52,60 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 05 - yjh
   type: ss
   server: 141.164.45.187
-  port: 9101
+  port: 6697
   cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
+  password: TEzjfAYq2IjtuoS
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 06 - yjh
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - yjh
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 08 - yjh
   type: ss
   server: 141.164.45.187
   port: 8091
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - yjh
+- name: 🇰🇷 韩国 (South Korea) 09 - yjh
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 10 - yjh
+  type: ss
+  server: 141.164.45.187
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 11 - yjh
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -99,6 +132,10 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - yjh
   - 🇰🇷 韩国 (South Korea) 06 - yjh
   - 🇰🇷 韩国 (South Korea) 07 - yjh
+  - 🇰🇷 韩国 (South Korea) 08 - yjh
+  - 🇰🇷 韩国 (South Korea) 09 - yjh
+  - 🇰🇷 韩国 (South Korea) 10 - yjh
+  - 🇰🇷 韩国 (South Korea) 11 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,5 +148,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - yjh
   - 🇰🇷 韩国 (South Korea) 06 - yjh
   - 🇰🇷 韩国 (South Korea) 07 - yjh
+  - 🇰🇷 韩国 (South Korea) 08 - yjh
+  - 🇰🇷 韩国 (South Korea) 09 - yjh
+  - 🇰🇷 韩国 (South Korea) 10 - yjh
+  - 🇰🇷 韩国 (South Korea) 11 - yjh
 rules:
 - MATCH,PROXIES
