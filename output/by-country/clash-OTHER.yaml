@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - yjh
   type: vless
-  server: 104.18.41.190
+  server: 104.21.93.182
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---mehrosaboran
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 02 - yjh
+  type: vless
+  server: 172.64.152.241
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -18,65 +32,36 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 02 - yjh
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 03 - yjh
   type: vless
-  server: hikvision-plus.com
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  server: 162.159.192.125
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /ws
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: a.cwvps.eu.org
 - name: 🌐 其他地区 (Other) 04 - yjh
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: hikvision-plus.com
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: lucasjow.us.ci
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 05 - yjh
   type: vless
-  server: 104.21.71.249
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 06 - yjh
-  type: vless
-  server: 188.114.97.6
+  server: 162.159.250.29
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -88,9 +73,36 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 06 - yjh
+  type: vless
+  server: undef.network
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 07 - yjh
   type: vless
-  server: 104.26.4.2
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 08 - yjh
+  type: vless
+  server: 172.64.152.241
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -99,26 +111,12 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 08 - yjh
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 - name: 🌐 其他地区 (Other) 09 - yjh
   type: vmess
-  server: 172.67.161.144
+  server: chatgpt.com
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -136,159 +134,6 @@ proxies:
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 11 - yjh
-  type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 12 - yjh
-  type: vless
-  server: undef.network
-  port: 2052
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 13 - yjh
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 14 - yjh
-  type: vless
-  server: eu02.123450908.xyz
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🌐 其他地区 (Other) 15 - yjh
-  type: vless
-  server: 104.18.0.181
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 16 - yjh
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 17 - yjh
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - yjh
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 19 - yjh
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 20 - yjh
-  type: vless
-  server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 21 - yjh
-  type: vless
-  server: 104.24.54.160
-  port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
@@ -296,26 +141,12 @@ proxies:
   servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 22 - yjh
+- name: 🌐 其他地区 (Other) 11 - yjh
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 23 - yjh
-  type: vless
-  server: 188.114.97.6
+  server: b2n.ir
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -327,79 +158,20 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 24 - yjh
+- name: 🌐 其他地区 (Other) 12 - yjh
   type: vless
-  server: b2n.ir
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
+    path: /?------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------&
     headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 25 - yjh
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 26 - yjh
-  type: vless
-  server: undef.network
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 27 - yjh
-  type: vless
-  server: 104.18.81.30
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 28 - yjh
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 29 - yjh
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 13 - yjh
   type: vless
   server: 172.64.158.170
   port: 443
@@ -413,6 +185,224 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 14 - yjh
+  type: vless
+  server: 199.232.78.159
+  port: 80
+  uuid: b026568d-92a8-418a-bc6f-77edfe96e266
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    headers:
+      Host: rb24.ir
+- name: 🌐 其他地区 (Other) 15 - yjh
+  type: vless
+  server: freesocks.work
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 16 - yjh
+  type: vless
+  server: 104.18.0.181
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 17 - yjh
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server5.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /drsukitgreiusweqa9otrh983?ed=2560
+    headers:
+      Host: server5.9966338.xyz
+- name: 🌐 其他地区 (Other) 18 - yjh
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 19 - yjh
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 20 - yjh
+  type: vless
+  server: www.5199dy.com
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 21 - yjh
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 22 - yjh
+  type: vless
+  server: cctvhikvision.center
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 23 - yjh
+  type: vless
+  server: undef.network
+  port: 2052
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 24 - yjh
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server5.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /drsukitgreiusweqa9otrh983
+    headers:
+      Host: server5.9966338.xyz
+- name: 🌐 其他地区 (Other) 25 - yjh
+  type: vless
+  server: 141.101.122.147
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 26 - yjh
+  type: vless
+  server: 172.66.47.10
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 27 - yjh
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 28 - yjh
+  type: vless
+  server: undef.network
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 29 - yjh
+  type: vless
+  server: 172.67.181.232
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 30 - yjh
   type: vless
   server: 104.16.10.135
@@ -429,7 +419,21 @@ proxies:
       Host: a.cwvps.eu.org
 - name: 🌐 其他地区 (Other) 31 - yjh
   type: vless
-  server: cf.130519.xyz
+  server: 104.26.4.2
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 32 - yjh
+  type: vless
+  server: 188.114.97.6
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -438,82 +442,12 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132fp=chrome
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 32 - yjh
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 33 - yjh
   type: vless
-  server: freesocks.work
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 34 - yjh
-  type: vmess
-  server: jp4.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nat12.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /vvvvvvvvv
-    headers:
-      Host: nat12.9966338.xyz
-- name: 🌐 其他地区 (Other) 35 - yjh
-  type: vless
-  server: 172.64.144.240
-  port: 443
-  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pmpmppm.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048fp=randomized
-    headers:
-      Host: pmpmppm.pages.dev
-- name: 🌐 其他地区 (Other) 36 - yjh
-  type: vless
-  server: 162.159.192.125
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 37 - yjh
-  type: vless
-  server: 172.64.152.241
+  server: 104.18.41.190
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -525,7 +459,104 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 34 - yjh
+  type: vless
+  server: 172.64.146.66
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 35 - yjh
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 36 - yjh
+  type: vless
+  server: 104.16.215.234
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 37 - yjh
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 38 - yjh
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 39 - yjh
+  type: vless
+  server: 104.18.43.174
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 40 - yjh
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 41 - yjh
   type: vless
   server: b2n.ir
   port: 443
@@ -539,66 +570,22 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 39 - yjh
+- name: 🌐 其他地区 (Other) 42 - yjh
   type: vless
-  server: b2n.ir
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---mehrosaboran
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 40 - yjh
-  type: vless
-  server: 172.64.150.28
-  port: 2082
+  server: 104.18.35.86
+  port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /fp
+    path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 41 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 42 - yjh
-  type: vmess
-  server: or3.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
 - name: 🌐 其他地区 (Other) 43 - yjh
   type: vmess
-  server: 104.17.77.77
+  server: 172.67.161.144
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -614,88 +601,20 @@ proxies:
       Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 44 - yjh
   type: vless
-  server: 172.67.172.155
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: freesocks.work
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: lucasjow.us.ci
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 45 - yjh
   type: vless
-  server: 104.18.0.181
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 46 - yjh
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 47 - yjh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 48 - yjh
-  type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 49 - yjh
-  type: vless
-  server: 172.67.71.187
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 50 - yjh
-  type: vless
-  server: 172.64.152.241
+  server: cf.130519.xyz
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -707,9 +626,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 51 - yjh
+- name: 🌐 其他地区 (Other) 46 - yjh
   type: vmess
-  server: 172.64.80.1
+  server: 172.67.167.78
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -723,90 +642,7 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 52 - yjh
-  type: vless
-  server: cctvhikvision.center
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 53 - yjh
-  type: vless
-  server: cctvhikvision.center
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 54 - yjh
-  type: vless
-  server: 104.21.65.43
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 55 - yjh
-  type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 56 - yjh
-  type: vless
-  server: 172.64.158.170
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 57 - yjh
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 58 - yjh
+- name: 🌐 其他地区 (Other) 47 - yjh
   type: vless
   server: 188.114.97.6
   port: 443
@@ -817,103 +653,7 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---DailyConfigs
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 59 - yjh
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 60 - yjh
-  type: vless
-  server: 162.159.250.29
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 61 - yjh
-  type: vless
-  server: 172.67.71.187
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 62 - yjh
-  type: vless
-  server: 104.16.215.234
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 63 - yjh
-  type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 64 - yjh
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 65 - yjh
-  type: vless
-  server: 104.18.35.15
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
     headers:
       Host: lucasjow.us.ci
 proxy-groups:
@@ -968,24 +708,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 45 - yjh
   - 🌐 其他地区 (Other) 46 - yjh
   - 🌐 其他地区 (Other) 47 - yjh
-  - 🌐 其他地区 (Other) 48 - yjh
-  - 🌐 其他地区 (Other) 49 - yjh
-  - 🌐 其他地区 (Other) 50 - yjh
-  - 🌐 其他地区 (Other) 51 - yjh
-  - 🌐 其他地区 (Other) 52 - yjh
-  - 🌐 其他地区 (Other) 53 - yjh
-  - 🌐 其他地区 (Other) 54 - yjh
-  - 🌐 其他地区 (Other) 55 - yjh
-  - 🌐 其他地区 (Other) 56 - yjh
-  - 🌐 其他地区 (Other) 57 - yjh
-  - 🌐 其他地区 (Other) 58 - yjh
-  - 🌐 其他地区 (Other) 59 - yjh
-  - 🌐 其他地区 (Other) 60 - yjh
-  - 🌐 其他地区 (Other) 61 - yjh
-  - 🌐 其他地区 (Other) 62 - yjh
-  - 🌐 其他地区 (Other) 63 - yjh
-  - 🌐 其他地区 (Other) 64 - yjh
-  - 🌐 其他地区 (Other) 65 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1038,23 +760,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 45 - yjh
   - 🌐 其他地区 (Other) 46 - yjh
   - 🌐 其他地区 (Other) 47 - yjh
-  - 🌐 其他地区 (Other) 48 - yjh
-  - 🌐 其他地区 (Other) 49 - yjh
-  - 🌐 其他地区 (Other) 50 - yjh
-  - 🌐 其他地区 (Other) 51 - yjh
-  - 🌐 其他地区 (Other) 52 - yjh
-  - 🌐 其他地区 (Other) 53 - yjh
-  - 🌐 其他地区 (Other) 54 - yjh
-  - 🌐 其他地区 (Other) 55 - yjh
-  - 🌐 其他地区 (Other) 56 - yjh
-  - 🌐 其他地区 (Other) 57 - yjh
-  - 🌐 其他地区 (Other) 58 - yjh
-  - 🌐 其他地区 (Other) 59 - yjh
-  - 🌐 其他地区 (Other) 60 - yjh
-  - 🌐 其他地区 (Other) 61 - yjh
-  - 🌐 其他地区 (Other) 62 - yjh
-  - 🌐 其他地区 (Other) 63 - yjh
-  - 🌐 其他地区 (Other) 64 - yjh
-  - 🌐 其他地区 (Other) 65 - yjh
 rules:
 - MATCH,PROXIES

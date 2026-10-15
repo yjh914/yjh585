@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - yjh
   type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 02 - yjh
+  type: vless
   server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
@@ -17,23 +30,9 @@ proxies:
     path: /ws
     headers:
       Host: support.zoom.us.v2ray.simspeedup.com
-- name: 🇹🇭 TH 02 - yjh
-  type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 03 - yjh
   type: vless
-  server: 104.16.10.2
+  server: 104.18.26.90
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -47,7 +46,7 @@ proxies:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 04 - yjh
   type: vless
-  server: 103.86.49.57
+  server: v2ray.simspeedup.com
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -59,15 +58,22 @@ proxies:
     headers:
       Host: ais.speedtest.net
 - name: 🇹🇭 TH 05 - yjh
-  type: ss
-  server: 103.107.52.106
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 06 - yjh
   type: ss
-  server: pphfree2.mvpnpvpn.de5.net
+  server: 103.107.52.106
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
@@ -80,84 +86,12 @@ proxies:
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
 - name: 🇹🇭 TH 08 - yjh
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  type: ss
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 09 - yjh
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 10 - yjh
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 11 - yjh
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 12 - yjh
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 13 - yjh
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,11 +105,6 @@ proxy-groups:
   - 🇹🇭 TH 06 - yjh
   - 🇹🇭 TH 07 - yjh
   - 🇹🇭 TH 08 - yjh
-  - 🇹🇭 TH 09 - yjh
-  - 🇹🇭 TH 10 - yjh
-  - 🇹🇭 TH 11 - yjh
-  - 🇹🇭 TH 12 - yjh
-  - 🇹🇭 TH 13 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -189,10 +118,5 @@ proxy-groups:
   - 🇹🇭 TH 06 - yjh
   - 🇹🇭 TH 07 - yjh
   - 🇹🇭 TH 08 - yjh
-  - 🇹🇭 TH 09 - yjh
-  - 🇹🇭 TH 10 - yjh
-  - 🇹🇭 TH 11 - yjh
-  - 🇹🇭 TH 12 - yjh
-  - 🇹🇭 TH 13 - yjh
 rules:
 - MATCH,PROXIES

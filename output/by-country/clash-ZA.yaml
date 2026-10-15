@@ -12,25 +12,13 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 02 - yjh
-  type: vless
-  server: 34.35.186.228
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 ZA 03 - yjh
   type: ss
-  server: 102.37.156.224
+  server: 20.164.209.198
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: IdBspBchqpInOZFK
   udp: true
-- name: 🇿🇦 ZA 04 - yjh
+- name: 🇿🇦 ZA 03 - yjh
   type: vless
   server: 34.35.189.111
   port: 443
@@ -40,6 +28,18 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇿🇦 ZA 04 - yjh
+  type: vless
+  server: 34.35.186.228
+  port: 443
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
