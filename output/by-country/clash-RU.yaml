@@ -13,13 +13,6 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  type: ss
   server: 176.32.32.108
   port: 18443
   cipher: aes-256-gcm
@@ -32,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
   - 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
 rules:
 - MATCH,PROXIES

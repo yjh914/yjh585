@@ -20,10 +20,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - yjh
   type: ss
-  server: 102.37.156.224
+  server: 20.164.209.198
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: IdBspBchqpInOZFK
   udp: true
 proxy-groups:
 - name: PROXIES
