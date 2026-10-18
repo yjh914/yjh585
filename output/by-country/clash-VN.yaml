@@ -4,33 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - yjh
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+- name: 🇻🇳 VN 01 - yjh
+  type: vless
+  server: 172.67.168.158
+  port: 2087
+  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server40.9966338.xyz
+  servername: vn11vina.210z.dev
   network: ws
   ws-opts:
-    path: /aiaiai
+    path: /vlessvina
     headers:
-      Host: server40.9966338.xyz
+      Host: vn11vina.210z.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - yjh
+  - 🇻🇳 VN 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - yjh
+  - 🇻🇳 VN 01 - yjh
 rules:
 - MATCH,PROXIES
