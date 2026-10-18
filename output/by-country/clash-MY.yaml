@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - yjh
-  type: vmess
-  server: 104.21.23.80
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /KualaLumpur1
-    headers:
-      Host: my.lovehk.xyz
-- name: 🇲🇾 MY 02 - yjh
   type: vless
   server: 216.173.67.59
   port: 443
@@ -34,37 +18,17 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 03 - yjh
-  type: vmess
-  server: 104.21.23.80
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /KualaLumpur1
-    headers:
-      Host: my.lovehk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 MY 01 - yjh
-  - 🇲🇾 MY 02 - yjh
-  - 🇲🇾 MY 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 MY 01 - yjh
-  - 🇲🇾 MY 02 - yjh
-  - 🇲🇾 MY 03 - yjh
 rules:
 - MATCH,PROXIES
