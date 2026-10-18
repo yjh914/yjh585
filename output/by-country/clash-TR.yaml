@@ -6,12 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - yjh
   type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - yjh
   type: vless
   server: test.keoplentuio.xyz
@@ -21,14 +27,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - yjh
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - yjh
   type: vless
   server: 155.103.71.142
   port: 443
@@ -42,20 +40,22 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 - yjh
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 05 - yjh
   type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 136.148.64.229
+  port: 2083
+  uuid: 0f32f9e7-d83c-4052-9a5e-103ed967b11c
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
