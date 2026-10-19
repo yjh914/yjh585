@@ -15,21 +15,8 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 02 - yjh
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - yjh
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -41,7 +28,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 04 - yjh
+- name: 🇫🇮 FI 03 - yjh
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -62,7 +49,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - yjh
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
-  - 🇫🇮 FI 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +57,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - yjh
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
-  - 🇫🇮 FI 04 - yjh
 rules:
 - MATCH,PROXIES
