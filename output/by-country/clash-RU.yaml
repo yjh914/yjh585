@@ -6,38 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
   type: vless
-  server: 185.141.227.223
+  server: 185.193.29.123
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
-  udp: true
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 02 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 02 - yjh
 rules:
 - MATCH,PROXIES
