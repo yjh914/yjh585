@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇷 BR 01 - yjh",
+        "🇧🇷 BR 02 - yjh",
+        "🇧🇷 BR 03 - yjh",
+        "🇧🇷 BR 04 - yjh",
+        "🇧🇷 BR 05 - yjh",
+        "🇧🇷 BR 06 - yjh",
+        "🇧🇷 BR 07 - yjh",
+        "🇧🇷 BR 08 - yjh",
+        "🇧🇷 BR 09 - yjh",
+        "🇧🇷 BR 10 - yjh",
+        "🇧🇷 BR 11 - yjh",
+        "🇧🇷 BR 12 - yjh",
+        "🇧🇷 BR 13 - yjh",
+        "🇧🇷 BR 14 - yjh",
+        "🇧🇷 BR 15 - yjh"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇷 BR 01 - yjh",
+        "🇧🇷 BR 02 - yjh",
+        "🇧🇷 BR 03 - yjh",
+        "🇧🇷 BR 04 - yjh",
+        "🇧🇷 BR 05 - yjh",
+        "🇧🇷 BR 06 - yjh",
+        "🇧🇷 BR 07 - yjh",
+        "🇧🇷 BR 08 - yjh",
+        "🇧🇷 BR 09 - yjh",
+        "🇧🇷 BR 10 - yjh",
+        "🇧🇷 BR 11 - yjh",
+        "🇧🇷 BR 12 - yjh",
+        "🇧🇷 BR 13 - yjh",
+        "🇧🇷 BR 14 - yjh",
+        "🇧🇷 BR 15 - yjh"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
