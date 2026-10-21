@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - yjh"
+        "🇮🇷 IR 01 - yjh",
+        "🇮🇷 IR 02 - yjh",
+        "🇮🇷 IR 03 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - yjh"
+        "🇮🇷 IR 01 - yjh",
+        "🇮🇷 IR 02 - yjh",
+        "🇮🇷 IR 03 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
