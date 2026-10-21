@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - yjh
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - yjh
   type: vless
   server: 47.238.210.5
   port: 13779
@@ -16,42 +31,20 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - yjh
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
   type: vless
-  server: 156.224.76.205
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  server: 43.129.80.179
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vp10.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: vp10.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: google.com
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - yjh
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 40015
-  cipher: aes-128-gcm
-  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
-  udp: true
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +53,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 02 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +61,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 02 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 04 - yjh
 rules:
 - MATCH,PROXIES
