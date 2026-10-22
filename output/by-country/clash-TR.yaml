@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - yjh
@@ -29,33 +29,19 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - yjh
-  type: vless
-  server: sable56.fars-remen.ir
-  port: 8446
-  uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
+  type: vmess
+  server: free.ertebatgoostar.ir
+  port: 443
+  uuid: c9eab439-53bf-46e4-ba58-fc368ae1ee8c
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
-  servername: storage-p2.googleapis.com
-  client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 04 - yjh
-  type: vless
-  server: 45.144.214.144
-  port: 8446
-  uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
-  servername: storage-p2.googleapis.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +50,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - yjh
   - 🇹🇷 土耳其 (Turkey) 02 - yjh
   - 🇹🇷 土耳其 (Turkey) 03 - yjh
-  - 🇹🇷 土耳其 (Turkey) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +58,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - yjh
   - 🇹🇷 土耳其 (Turkey) 02 - yjh
   - 🇹🇷 土耳其 (Turkey) 03 - yjh
-  - 🇹🇷 土耳其 (Turkey) 04 - yjh
 rules:
 - MATCH,PROXIES
