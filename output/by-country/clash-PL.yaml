@@ -6,13 +6,21 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - yjh
   type: vless
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 02 - yjh
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 02 - yjh
+- name: 🇵🇱 PL 03 - yjh
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - yjh
   - 🇵🇱 PL 02 - yjh
+  - 🇵🇱 PL 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - yjh
   - 🇵🇱 PL 02 - yjh
+  - 🇵🇱 PL 03 - yjh
 rules:
 - MATCH,PROXIES
