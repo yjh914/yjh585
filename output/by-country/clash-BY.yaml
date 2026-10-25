@@ -43,6 +43,32 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
+- name: 🇧🇾 BY 04 - yjh
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 05 - yjh
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +77,8 @@ proxy-groups:
   - 🇧🇾 BY 01 - yjh
   - 🇧🇾 BY 02 - yjh
   - 🇧🇾 BY 03 - yjh
+  - 🇧🇾 BY 04 - yjh
+  - 🇧🇾 BY 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +87,7 @@ proxy-groups:
   - 🇧🇾 BY 01 - yjh
   - 🇧🇾 BY 02 - yjh
   - 🇧🇾 BY 03 - yjh
+  - 🇧🇾 BY 04 - yjh
+  - 🇧🇾 BY 05 - yjh
 rules:
 - MATCH,PROXIES
