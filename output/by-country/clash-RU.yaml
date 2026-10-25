@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -15,17 +29,43 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  type: vless
+  server: 88.216.69.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime06.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  type: ss
+  server: 46.17.43.227
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 02 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 02 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  - 🇷🇺 俄罗斯 (Russia) 04 - yjh
 rules:
 - MATCH,PROXIES
