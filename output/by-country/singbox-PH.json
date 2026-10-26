@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - yjh"
+        "🇵🇭 PH 01 - yjh",
+        "🇵🇭 PH 02 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - yjh"
+        "🇵🇭 PH 01 - yjh",
+        "🇵🇭 PH 02 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
