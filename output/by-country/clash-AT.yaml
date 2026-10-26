@@ -6,27 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - yjh
   type: vless
-  server: 62.83.41.69
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: au6.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /AU6W
-    headers:
-      Host: au6.pad-sservice.lat
-- name: 🇦🇹 AT 02 - yjh
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 03 - yjh
-  type: vless
   server: 62.83.19.127
   port: 8443
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
@@ -39,6 +18,27 @@ proxies:
     path: /AU5W
     headers:
       Host: au5.pad-sservice.lat
+- name: 🇦🇹 AT 02 - yjh
+  type: vless
+  server: 62.83.19.127
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au5.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU5W?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: au5.pad-sservice.lat
+- name: 🇦🇹 AT 03 - yjh
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇦🇹 AT 04 - yjh
   type: vless
   server: 62.83.41.69
@@ -54,40 +54,82 @@ proxies:
     headers:
       Host: au6.pad-sservice.lat
 - name: 🇦🇹 AT 05 - yjh
-  type: vless
-  server: 62.83.19.127
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: au5.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /AU5W?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: au5.pad-sservice.lat
-- name: 🇦🇹 AT 06 - yjh
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 07 - yjh
+- name: 🇦🇹 AT 06 - yjh
   type: vless
-  server: au5.pad-sservice.lat
+  server: 89.58.20.210
   port: 8443
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: au5.pad-sservice.lat
+  servername: au2.pad-sservice.lat
   network: ws
   ws-opts:
-    path: /AU5W
+    path: /A11U#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: au5.pad-sservice.lat
+      Host: au2.pad-service.com
+- name: 🇦🇹 AT 07 - yjh
+  type: vless
+  server: 62.83.41.69
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au6.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
+- name: 🇦🇹 AT 08 - yjh
+  type: vless
+  server: au6.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au6.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
+- name: 🇦🇹 AT 09 - yjh
+  type: vless
+  server: au7.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au7.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU7W
+    headers:
+      Host: au7.pad-sservice.lat
+- name: 🇦🇹 AT 10 - yjh
+  type: vless
+  server: 152.53.1.40
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au4.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /A14U
+    headers:
+      Host: au4.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,6 +142,9 @@ proxy-groups:
   - 🇦🇹 AT 05 - yjh
   - 🇦🇹 AT 06 - yjh
   - 🇦🇹 AT 07 - yjh
+  - 🇦🇹 AT 08 - yjh
+  - 🇦🇹 AT 09 - yjh
+  - 🇦🇹 AT 10 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,5 +157,8 @@ proxy-groups:
   - 🇦🇹 AT 05 - yjh
   - 🇦🇹 AT 06 - yjh
   - 🇦🇹 AT 07 - yjh
+  - 🇦🇹 AT 08 - yjh
+  - 🇦🇹 AT 09 - yjh
+  - 🇦🇹 AT 10 - yjh
 rules:
 - MATCH,PROXIES
