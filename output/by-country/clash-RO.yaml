@@ -6,20 +6,13 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - yjh
   type: vless
-  server: 178.83.45.226
+  server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - yjh
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 03 - yjh
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -27,14 +20,29 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 04 - yjh
+- name: 🇷🇴 RO 03 - yjh
   type: vless
-  server: 155.117.5.208
+  server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 04 - yjh
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 05 - yjh
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +52,7 @@ proxy-groups:
   - 🇷🇴 RO 02 - yjh
   - 🇷🇴 RO 03 - yjh
   - 🇷🇴 RO 04 - yjh
+  - 🇷🇴 RO 05 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +62,6 @@ proxy-groups:
   - 🇷🇴 RO 02 - yjh
   - 🇷🇴 RO 03 - yjh
   - 🇷🇴 RO 04 - yjh
+  - 🇷🇴 RO 05 - yjh
 rules:
 - MATCH,PROXIES
