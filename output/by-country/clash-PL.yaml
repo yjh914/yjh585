@@ -23,13 +23,12 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - yjh
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - yjh
   type: vless
   server: site.teslamotor.site
@@ -48,74 +47,26 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 06 - yjh
   type: vless
-  server: edge10.cyrionflare.com
+  server: 168.222.43.53
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 07 - yjh
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 08 - yjh
   type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 09 - yjh
-  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 10 - yjh
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 11 - yjh
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 12 - yjh
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 13 - yjh
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 14 - yjh
-  type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -132,12 +83,6 @@ proxy-groups:
   - 🇵🇱 PL 06 - yjh
   - 🇵🇱 PL 07 - yjh
   - 🇵🇱 PL 08 - yjh
-  - 🇵🇱 PL 09 - yjh
-  - 🇵🇱 PL 10 - yjh
-  - 🇵🇱 PL 11 - yjh
-  - 🇵🇱 PL 12 - yjh
-  - 🇵🇱 PL 13 - yjh
-  - 🇵🇱 PL 14 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,11 +96,5 @@ proxy-groups:
   - 🇵🇱 PL 06 - yjh
   - 🇵🇱 PL 07 - yjh
   - 🇵🇱 PL 08 - yjh
-  - 🇵🇱 PL 09 - yjh
-  - 🇵🇱 PL 10 - yjh
-  - 🇵🇱 PL 11 - yjh
-  - 🇵🇱 PL 12 - yjh
-  - 🇵🇱 PL 13 - yjh
-  - 🇵🇱 PL 14 - yjh
 rules:
 - MATCH,PROXIES
