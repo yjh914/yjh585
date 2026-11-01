@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - yjh
   type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 02 - yjh
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -31,77 +17,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - yjh
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 04 - yjh
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 05 - yjh
-  type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 06 - yjh
-  type: vless
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 07 - yjh
-  type: vless
-  server: hw5.roghanmo.com
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw5.roghanmo.com
-- name: 🇫🇮 FI 08 - yjh
+- name: 🇫🇮 FI 02 - yjh
   type: vless
   server: 65.109.211.81
   port: 465
@@ -115,7 +31,7 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 FI 09 - yjh
+- name: 🇫🇮 FI 03 - yjh
   type: vless
   server: 65.109.211.81
   port: 465
@@ -129,21 +45,7 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 FI 10 - yjh
-  type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 11 - yjh
+- name: 🇫🇮 FI 04 - yjh
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -165,13 +67,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
   - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
-  - 🇫🇮 FI 06 - yjh
-  - 🇫🇮 FI 07 - yjh
-  - 🇫🇮 FI 08 - yjh
-  - 🇫🇮 FI 09 - yjh
-  - 🇫🇮 FI 10 - yjh
-  - 🇫🇮 FI 11 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -181,12 +76,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - yjh
   - 🇫🇮 FI 03 - yjh
   - 🇫🇮 FI 04 - yjh
-  - 🇫🇮 FI 05 - yjh
-  - 🇫🇮 FI 06 - yjh
-  - 🇫🇮 FI 07 - yjh
-  - 🇫🇮 FI 08 - yjh
-  - 🇫🇮 FI 09 - yjh
-  - 🇫🇮 FI 10 - yjh
-  - 🇫🇮 FI 11 - yjh
 rules:
 - MATCH,PROXIES

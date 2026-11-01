@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - yjh
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - yjh
   type: vless
   server: 95.174.68.188
@@ -32,18 +32,17 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 03 - yjh
   type: vless
-  server: 46.101.46.169
-  port: 486
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - yjh
   type: vless
   server: 95.174.68.188
@@ -59,18 +58,17 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - yjh
   type: vless
-  server: 162.159.228.255
-  port: 443
-  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vless
     headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 06 - yjh
   type: vless
   server: 95.174.68.188
@@ -97,59 +95,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 08 - yjh
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - yjh
-  type: vless
-  server: 147.78.0.186
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 10 - yjh
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - yjh
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,10 +107,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - yjh
   - 🇦🇪 阿联酋 (UAE) 06 - yjh
   - 🇦🇪 阿联酋 (UAE) 07 - yjh
-  - 🇦🇪 阿联酋 (UAE) 08 - yjh
-  - 🇦🇪 阿联酋 (UAE) 09 - yjh
-  - 🇦🇪 阿联酋 (UAE) 10 - yjh
-  - 🇦🇪 阿联酋 (UAE) 11 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -178,9 +119,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - yjh
   - 🇦🇪 阿联酋 (UAE) 06 - yjh
   - 🇦🇪 阿联酋 (UAE) 07 - yjh
-  - 🇦🇪 阿联酋 (UAE) 08 - yjh
-  - 🇦🇪 阿联酋 (UAE) 09 - yjh
-  - 🇦🇪 阿联酋 (UAE) 10 - yjh
-  - 🇦🇪 阿联酋 (UAE) 11 - yjh
 rules:
 - MATCH,PROXIES
