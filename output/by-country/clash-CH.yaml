@@ -39,31 +39,35 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇭 CH 04 - yjh
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 185.18.250.252
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
 - name: 🇨🇭 CH 05 - yjh
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
 - name: 🇨🇭 CH 06 - yjh
   type: vless
   server: 208.69.78.217
@@ -76,6 +80,30 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇨🇭 CH 07 - yjh
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - yjh
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +115,8 @@ proxy-groups:
   - 🇨🇭 CH 04 - yjh
   - 🇨🇭 CH 05 - yjh
   - 🇨🇭 CH 06 - yjh
+  - 🇨🇭 CH 07 - yjh
+  - 🇨🇭 CH 08 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +128,7 @@ proxy-groups:
   - 🇨🇭 CH 04 - yjh
   - 🇨🇭 CH 05 - yjh
   - 🇨🇭 CH 06 - yjh
+  - 🇨🇭 CH 07 - yjh
+  - 🇨🇭 CH 08 - yjh
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - yjh
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,6 +58,72 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - yjh
   type: vless
+  server: 57.129.130.10
+  port: 52014
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - yjh
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - yjh
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - yjh
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - yjh
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - yjh
+  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -69,7 +135,7 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - yjh
+- name: 🇦🇪 阿联酋 (UAE) 11 - yjh
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -93,6 +159,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - yjh
   - 🇦🇪 阿联酋 (UAE) 05 - yjh
   - 🇦🇪 阿联酋 (UAE) 06 - yjh
+  - 🇦🇪 阿联酋 (UAE) 07 - yjh
+  - 🇦🇪 阿联酋 (UAE) 08 - yjh
+  - 🇦🇪 阿联酋 (UAE) 09 - yjh
+  - 🇦🇪 阿联酋 (UAE) 10 - yjh
+  - 🇦🇪 阿联酋 (UAE) 11 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +175,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - yjh
   - 🇦🇪 阿联酋 (UAE) 05 - yjh
   - 🇦🇪 阿联酋 (UAE) 06 - yjh
+  - 🇦🇪 阿联酋 (UAE) 07 - yjh
+  - 🇦🇪 阿联酋 (UAE) 08 - yjh
+  - 🇦🇪 阿联酋 (UAE) 09 - yjh
+  - 🇦🇪 阿联酋 (UAE) 10 - yjh
+  - 🇦🇪 阿联酋 (UAE) 11 - yjh
 rules:
 - MATCH,PROXIES
