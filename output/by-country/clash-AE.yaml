@@ -19,33 +19,45 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - yjh
   type: vless
-  server: 185.86.147.175
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
   network: ws
   ws-opts:
-    path: /service/telemetry/045d381f1166/
+    path: /vless
     headers:
-      Host: bhjolq0d0l.flowersgood.top
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 03 - yjh
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 04 - yjh
   type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - yjh
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -57,47 +69,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - yjh
-  type: vless
-  server: 185.86.147.175
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
 - name: 🇦🇪 阿联酋 (UAE) 06 - yjh
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 07 - yjh
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 08 - yjh
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -110,7 +82,40 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - yjh
+  type: ss
+  server: 151.241.19.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 08 - yjh
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - yjh
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - yjh
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -123,13 +128,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 10 - yjh
-  type: ss
-  server: 151.241.19.29
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇦🇪 阿联酋 (UAE) 11 - yjh
   type: vless
   server: 84.235.244.108
@@ -144,19 +142,12 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - yjh
-  type: vless
-  server: 185.86.147.175
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  type: ss
+  server: 151.241.19.29
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
 - name: 🇦🇪 阿联酋 (UAE) 13 - yjh
   type: vless
   server: 95.174.68.188
@@ -171,39 +162,6 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 14 - yjh
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - yjh
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 16 - yjh
-  type: ss
-  server: 151.241.19.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 17 - yjh
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -235,9 +193,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 12 - yjh
   - 🇦🇪 阿联酋 (UAE) 13 - yjh
   - 🇦🇪 阿联酋 (UAE) 14 - yjh
-  - 🇦🇪 阿联酋 (UAE) 15 - yjh
-  - 🇦🇪 阿联酋 (UAE) 16 - yjh
-  - 🇦🇪 阿联酋 (UAE) 17 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -257,8 +212,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 12 - yjh
   - 🇦🇪 阿联酋 (UAE) 13 - yjh
   - 🇦🇪 阿联酋 (UAE) 14 - yjh
-  - 🇦🇪 阿联酋 (UAE) 15 - yjh
-  - 🇦🇪 阿联酋 (UAE) 16 - yjh
-  - 🇦🇪 阿联酋 (UAE) 17 - yjh
 rules:
 - MATCH,PROXIES
