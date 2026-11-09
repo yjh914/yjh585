@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - yjh
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 89.22.224.146
+  port: 43788
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   network: ws
   ws-opts:
-    path: /vless
+    path: /@Marisa_kristi
     headers:
-      Host: 5.178.109.174
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇸🇪 SE 02 - yjh
   type: ss
   server: 138.199.55.243
@@ -25,24 +26,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇪 SE 03 - yjh
-  type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 04 - yjh
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 05 - yjh
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -53,6 +36,24 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 04 - yjh
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 05 - yjh
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 06 - yjh
   type: vless
   server: 194.104.94.141
