@@ -33,21 +33,6 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - yjh
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
       Host: 47.244.120.197
 proxy-groups:
 - name: PROXIES
@@ -56,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 02 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 03 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +48,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - yjh
   - 🇭🇰 中国香港 (Hong Kong) 02 - yjh
-  - 🇭🇰 中国香港 (Hong Kong) 03 - yjh
 rules:
 - MATCH,PROXIES
