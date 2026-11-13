@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - yjh
+- name: 🇸🇨 SC 01 - yjh
   type: vless
-  server: 38.107.234.57
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
+  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: 38.107.234.57
+      Host: proxy-34l.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - yjh
+  - 🇸🇨 SC 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - yjh
+  - 🇸🇨 SC 01 - yjh
 rules:
 - MATCH,PROXIES
