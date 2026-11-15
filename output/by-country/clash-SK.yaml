@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇰 SK 01 - yjh
+  type: vless
+  server: bbcdd4t.de-p2.h1clayd.click
+  port: 443
+  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n9cdr2Qf9h3S_jf5Rcd15fl-4fxuztHvlexE7G-QvW8
+  servername: bbcdd4t.de-p2.h1clayd.click
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇰 SK 01 - yjh
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇰 SK 01 - yjh
+rules:
+- MATCH,PROXIES
