@@ -5,25 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yjh
+  type: vless
+  server: 104.18.79.242
+  port: 443
+  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
+  network: ws
+  ws-opts:
+    path: /11290579a72cdb4e?ed=2560
+    headers:
+      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
+- name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
   type: ss
   server: 185.22.153.117
   port: 18443
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
   udp: true
 proxy-groups:
 - name: PROXIES
