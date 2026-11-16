@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - yjh
+- name: 🇸🇨 SC 01 - yjh
   type: vless
-  server: 185.197.193.137
-  port: 443
-  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: us2.v2less.site
+  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: us2.v2less.site
+      Host: proxy-34l.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - yjh
+  - 🇸🇨 SC 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - yjh
+  - 🇸🇨 SC 01 - yjh
 rules:
 - MATCH,PROXIES
