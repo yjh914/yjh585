@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - yjh
+- name: 🇸🇨 SC 01 - yjh
   type: vless
-  server: 185.86.147.211
-  port: 443
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 185.86.147.211
+  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
-    path: /assets/chunk/AFaAJmUwqcwd
+    path: /
     headers:
-      Host: 185.86.147.211
+      Host: proxy-34l.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - yjh
+  - 🇸🇨 SC 01 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - yjh
+  - 🇸🇨 SC 01 - yjh
 rules:
 - MATCH,PROXIES
