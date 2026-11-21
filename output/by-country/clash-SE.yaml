@@ -35,20 +35,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - yjh
-  type: vless
-  server: 92.223.84.254
-  port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: subgift.gcorecdn.com
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +43,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - yjh
   - 🇸🇪 SE 02 - yjh
   - 🇸🇪 SE 03 - yjh
-  - 🇸🇪 SE 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,6 +51,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - yjh
   - 🇸🇪 SE 02 - yjh
   - 🇸🇪 SE 03 - yjh
-  - 🇸🇪 SE 04 - yjh
 rules:
 - MATCH,PROXIES
