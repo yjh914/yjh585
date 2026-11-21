@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - yjh
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
 - name: 🇸🇪 SE 02 - yjh
   type: ss
   server: 138.199.55.243
@@ -35,6 +38,17 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 04 - yjh
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +57,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - yjh
   - 🇸🇪 SE 02 - yjh
   - 🇸🇪 SE 03 - yjh
+  - 🇸🇪 SE 04 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +66,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - yjh
   - 🇸🇪 SE 02 - yjh
   - 🇸🇪 SE 03 - yjh
+  - 🇸🇪 SE 04 - yjh
 rules:
 - MATCH,PROXIES
