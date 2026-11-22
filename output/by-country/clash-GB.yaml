@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - yjh
   type: ss
-  server: 185.176.206.9
+  server: 142.202.51.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -19,25 +19,18 @@ proxies:
   password: shadowsocks
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 03 - yjh
-  type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: eac64826-e281-49c2-88bf-cd0078675b09
+  type: ss
+  server: 198.244.201.129
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: worker3.cexewob845.workers.dev
-  network: ws
-  ws-opts:
-    path: /Nu2VsE5wrioADb0C
-    headers:
-      Host: worker3.cexewob845.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 04 - yjh
   type: ss
-  server: 158.173.24.73
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 38.114.120.221
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 05 - yjh
   type: ss
@@ -48,19 +41,26 @@ proxies:
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 06 - yjh
   type: ss
-  server: 198.244.201.129
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - yjh
+  type: ss
+  server: 198.244.202.215
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - yjh
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 08 - yjh
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 09 - yjh
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -75,14 +75,14 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 09 - yjh
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 10 - yjh
+  type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - yjh
   type: vless
   server: 57.129.132.223
   port: 80
@@ -95,81 +95,9 @@ proxies:
     path: /vless/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 11 - yjh
+- name: 🇬🇧 英国 (United Kingdom) 12 - yjh
   type: ss
   server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - yjh
-  type: vless
-  server: node-uk.connectsuite.org
-  port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 13 - yjh
-  type: vless
-  server: 51.38.71.147
-  port: 443
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uk1.connectsuite.org
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-    headers:
-      Host: uk1.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 14 - yjh
-  type: ss
-  server: 142.202.51.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 15 - yjh
-  type: vless
-  server: 104.26.0.1
-  port: 443
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ezaccess-project-f62c30.pages.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 16 - yjh
-  type: vless
-  server: 104.21.14.228
-  port: 443
-  uuid: 443b1e88-41fa-43bb-ff6c-982544254b74
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wandering-river-cd33.mramezanian1375.workers.dev
-  network: ws
-  ws-opts:
-    path: /87fab74555d6e093
-    headers:
-      Host: wandering-river-cd33.mramezanian1375.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 17 - yjh
-  type: ss
-  server: 198.244.202.215
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 18 - yjh
-  type: ss
-  server: 38.114.120.221
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -191,12 +119,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - yjh
   - 🇬🇧 英国 (United Kingdom) 11 - yjh
   - 🇬🇧 英国 (United Kingdom) 12 - yjh
-  - 🇬🇧 英国 (United Kingdom) 13 - yjh
-  - 🇬🇧 英国 (United Kingdom) 14 - yjh
-  - 🇬🇧 英国 (United Kingdom) 15 - yjh
-  - 🇬🇧 英国 (United Kingdom) 16 - yjh
-  - 🇬🇧 英国 (United Kingdom) 17 - yjh
-  - 🇬🇧 英国 (United Kingdom) 18 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -214,11 +136,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - yjh
   - 🇬🇧 英国 (United Kingdom) 11 - yjh
   - 🇬🇧 英国 (United Kingdom) 12 - yjh
-  - 🇬🇧 英国 (United Kingdom) 13 - yjh
-  - 🇬🇧 英国 (United Kingdom) 14 - yjh
-  - 🇬🇧 英国 (United Kingdom) 15 - yjh
-  - 🇬🇧 英国 (United Kingdom) 16 - yjh
-  - 🇬🇧 英国 (United Kingdom) 17 - yjh
-  - 🇬🇧 英国 (United Kingdom) 18 - yjh
 rules:
 - MATCH,PROXIES
