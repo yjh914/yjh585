@@ -8,19 +8,44 @@ proxies:
   type: vless
   server: 136.148.83.69
   port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yjh
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - yjh
+  type: vless
+  server: cabinet.filnex.baby
+  port: 443
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: claywick.elvano.website
+  network: ws
+  ws-opts:
+    path: /api/de7/stream
+    headers:
+      Host: cabinet.filnex.baby
+- name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
   type: vless
   server: 147.45.221.225
   port: 443
@@ -34,22 +59,6 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 04 - yjh
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - yjh
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - yjh
   type: vless
   server: 136.148.83.69
@@ -60,15 +69,6 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 07 - yjh
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 08 - yjh
   type: vless
   server: 147.45.175.81
   port: 443
@@ -82,24 +82,6 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 09 - yjh
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 10 - yjh
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,9 +94,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - yjh
   - 🇷🇺 俄罗斯 (Russia) 06 - yjh
   - 🇷🇺 俄罗斯 (Russia) 07 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 08 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 09 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 10 - yjh
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,8 +106,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - yjh
   - 🇷🇺 俄罗斯 (Russia) 06 - yjh
   - 🇷🇺 俄罗斯 (Russia) 07 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 08 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 09 - yjh
-  - 🇷🇺 俄罗斯 (Russia) 10 - yjh
 rules:
 - MATCH,PROXIES
