@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yjh"
+        "🇱🇰 LK 01 - yjh",
+        "🇱🇰 LK 02 - yjh",
+        "🇱🇰 LK 03 - yjh",
+        "🇱🇰 LK 04 - yjh",
+        "🇱🇰 LK 05 - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yjh"
+        "🇱🇰 LK 01 - yjh",
+        "🇱🇰 LK 02 - yjh",
+        "🇱🇰 LK 03 - yjh",
+        "🇱🇰 LK 04 - yjh",
+        "🇱🇰 LK 05 - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
