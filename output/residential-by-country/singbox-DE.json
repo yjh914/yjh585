@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - yjh",
-        "🇹🇭 TH 02 - yjh"
+        "🇩🇪 德国 (Germany) 01 (家宽) - yjh"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - yjh",
-        "🇹🇭 TH 02 - yjh"
+        "🇩🇪 德国 (Germany) 01 (家宽) - yjh"
       ],
       "url": "https://www.google.com/generate_204"
     },
